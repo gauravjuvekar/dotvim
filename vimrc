@@ -5,7 +5,6 @@ set number
 set background=dark
 set showmatch
 set autoindent
-set smartindent
 set smarttab
 set tabstop=4
 set shiftwidth=4
@@ -20,6 +19,14 @@ set clipboard=unnamedplus
 set t_Co=256
 
 au BufNewFile,BufRead *.html set filetype=htmldjango
+
+"Highlight words
+augroup HiglightTODO
+    autocmd!
+    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TRWTF', -1) | call matchadd('Todo', 'WTF', -1)
+augroup END
+
+
 
 nmap <F5> :SCCompile<CR>
 nmap <F6> :SCCompileRun<CR>
