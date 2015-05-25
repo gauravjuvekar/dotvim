@@ -13,9 +13,23 @@ set formatoptions+=t
 set colorcolumn=79
 set scrolloff=4
 set laststatus=2
-
-set modeline
-set modelines=5
+let g:secure_modelines_allowed_items = [
+	\ "textwidth",   "tw",
+	\ "softtabstop", "sts",
+	\ "tabstop",     "ts",
+	\ "shiftwidth",  "sw",
+	\ "expandtab",   "et",   "noexpandtab", "noet",
+	\ "colorcolumn",
+	\ "filetype",    "ft",
+	\ "foldmethod",  "fdm",
+	\ "readonly",    "ro",   "noreadonly", "noro",
+	\ "rightleft",   "rl",   "norightleft", "norl",
+	\ "cindent",     "cin",  "nocindent", "nocin",
+	\ "smartindent", "si",   "nosmartindent", "nosi",
+	\ "autoindent",  "ai",   "noautoindent", "noai",
+	\ "spell",
+	\ "spelllang"
+	\ ]
 
 set clipboard=unnamedplus
 
