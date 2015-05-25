@@ -14,6 +14,9 @@ set colorcolumn=79
 set scrolloff=4
 set laststatus=2
 
+set modeline
+set modelines=5
+
 set clipboard=unnamedplus
 
 set t_Co=256
