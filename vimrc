@@ -60,6 +60,7 @@ let g:indent_guides_auto_colors = 0
 let g:airline_powerline_fonts = 1
 
 let g:ycm_global_ycm_extra_conf                    = '~/.vim/ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf                       = 0
 let g:ycm_collect_identifiers_from_tags_files      = 1 " Let YCM read tags from Ctags file"
 let g:ycm_use_ultisnips_completer                  = 1 " Default 1, just ensure
 let g:ycm_seed_identifiers_with_syntax             = 1 " Completion for programming language's keyword
