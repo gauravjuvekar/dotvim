@@ -2,13 +2,13 @@ syntax on
 filetype plugin indent on
 call pathogen#infect()
 set number
-set background=dark
 set showmatch
 set autoindent
 set smarttab
 set tabstop=4
 set shiftwidth=4
 set textwidth=79
+set foldmethod=syntax
 set formatoptions+=t
 set colorcolumn=79
 set scrolloff=4
@@ -34,6 +34,8 @@ let g:secure_modelines_allowed_items = [
 set clipboard=unnamedplus
 
 set t_Co=256
+set background=dark
+colorscheme solarized
 
 au BufNewFile,BufRead *.html set filetype=htmldjango
 
