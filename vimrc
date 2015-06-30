@@ -9,6 +9,7 @@ set tabstop=4
 set shiftwidth=4
 set textwidth=79
 set foldmethod=syntax
+set foldlevelstart=99
 set formatoptions+=t
 set colorcolumn=79
 set scrolloff=4
