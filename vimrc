@@ -14,6 +14,7 @@ set formatoptions+=t
 set colorcolumn=79
 set scrolloff=4
 set laststatus=2
+set cinkeys-=0#
 let g:secure_modelines_allowed_items = [
 	\ "textwidth",   "tw",
 	\ "softtabstop", "sts",
