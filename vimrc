@@ -14,7 +14,10 @@ set formatoptions+=t
 set colorcolumn=79
 set scrolloff=4
 set laststatus=2
+"Indent lines beginning with #
 set cinkeys-=0#
+"Indent to opening paren
+set cino+=(0
 let g:secure_modelines_allowed_items = [
 	\ "textwidth",   "tw",
 	\ "softtabstop", "sts",
