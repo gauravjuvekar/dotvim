@@ -97,3 +97,6 @@
 [submodule "terminal/gnome-terminal-colors-solarized"]
 	path = terminal/gnome-terminal-colors-solarized
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+[submodule "bundle/Smart-Tabs"]
+	path = bundle/Smart-Tabs
+	url = https://github.com/vim-scripts/Smart-Tabs.git
