@@ -61,7 +61,8 @@ vmap <Enter> <Plug>(EasyAlign)
     
 "let g:syntastic_quiet_messages          = { "type" : "style" }
 let g:syntastic_aggregate_errors        = 1
-let g:syntastic_python_pylint_args      = "--disable=bad-whitespace --disable=W0141 --disable=invalid-name --disable=E221" 
+let g:syntastic_python_pylint_args      = "--disable=bad-whitespace --disable=invalid-name --disable=superfluous-parens --disable=missing-docstring" 
+let g:syntastic_python_flake8_args      = "--disable=W0141,E221"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ] 
 let g:indent_guides_auto_colors = 0
 
