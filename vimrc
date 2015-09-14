@@ -36,6 +36,10 @@ let g:secure_modelines_allowed_items = [
 
 set clipboard=unnamedplus
 
+" Make shift tab work
+map <Esc>[Z <s-tab>
+ounmap <Esc>[Z
+
 set t_Co=256
 set background=dark
 colorscheme solarized
@@ -52,10 +56,8 @@ augroup HiglightTODO
 augroup END
 
 
-
-nmap <F5> :SCCompile<CR>
-nmap <F6> :SCCompileRun<CR>
-nmap <F4> :set hlsearch!<CR>
+nnoremap <F5> :YcmDiags<CR>
+nnoremap <F4> :set hlsearch!<CR>
 
 vmap <Enter> <Plug>(EasyAlign)
     
@@ -68,6 +70,12 @@ let g:indent_guides_auto_colors = 0
 
 let g:airline_powerline_fonts = 1
 
+let g:ycm_register_as_syntastic_checker            = 1
+let g:Show_diagnostics_ui                          = 1
+let g:ycm_enable_diagnostic_signs = 1
+let g:ycm_enable_diagnostic_highlighting = 0
+let g:ycm_always_populate_location_list = 1 "default 0
+let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
 let g:ycm_global_ycm_extra_conf                    = '~/.vim/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf                       = 0
 let g:ycm_collect_identifiers_from_tags_files      = 1 " Let YCM read tags from Ctags file"
@@ -76,6 +84,7 @@ let g:ycm_seed_identifiers_with_syntax             = 1 " Completion for programm
 let g:ycm_complete_in_comments                     = 1 " Completion in comments
 let g:ycm_complete_in_strings                      = 1 " Completion in string
 let g:ycm_autoclose_preview_window_after_insertion = 1
+nnoremap <F2> :YcmCompleter FixIt<CR>
 
 call submode#enter_with('splits', 'n', '', '<C-w>', '<Nop>')
 call submode#map('splits',        'n', '', 'l',     '<C-w>l')
