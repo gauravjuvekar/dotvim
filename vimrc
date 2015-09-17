@@ -1,21 +1,43 @@
+" Pathogen
 syntax on
 filetype plugin indent on
 call pathogen#infect()
+
 set number
 set showmatch
+
+" Alignments and indents
 set autoindent
 set smarttab
+set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set textwidth=79
+set colorcolumn=79
+
 set foldmethod=syntax
 set foldlevelstart=99
+
 set formatoptions+=t
-set colorcolumn=79
+
 set scrolloff=4
 set laststatus=2
+
 "Indent to opening paren
+set cindent
 set cino+=(0
+
+"Strip trailing whitespaces on write
+function! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd BufWritePre * :call<SID>StripTrailingWhitespaces()
+
+
 let g:secure_modelines_allowed_items = [
 	\ "textwidth",   "tw",
 	\ "softtabstop", "sts",
