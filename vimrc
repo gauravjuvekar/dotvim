@@ -67,6 +67,7 @@ set background=dark
 colorscheme solarized
 
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
+autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
 autocmd BufWritePost *.c :UpdateTypesFile
 autocmd BufWritePost *.h :UpdateTypesFile
 
