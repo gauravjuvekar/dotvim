@@ -83,12 +83,12 @@ nnoremap <F5> :YcmDiags<CR>
 nnoremap <F4> :set hlsearch!<CR>
 
 vmap <Enter> <Plug>(EasyAlign)
-    
+
 "let g:syntastic_quiet_messages          = { "type" : "style" }
 let g:syntastic_aggregate_errors        = 1
-let g:syntastic_python_pylint_args      = "--disable=bad-whitespace --disable=invalid-name --disable=superfluous-parens --disable=missing-docstring" 
+let g:syntastic_python_pylint_args      = "--disable=bad-whitespace --disable=invalid-name --disable=superfluous-parens --disable=missing-docstring --disable=bad-continuation"
 let g:syntastic_python_flake8_args      = "--disable=W0141,E221"
-let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ] 
+let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
 
 let g:airline_powerline_fonts = 1
