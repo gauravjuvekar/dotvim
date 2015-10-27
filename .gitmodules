@@ -100,3 +100,9 @@
 [submodule "bundle/Smart-Tabs"]
 	path = bundle/Smart-Tabs
 	url = https://github.com/vim-scripts/Smart-Tabs.git
+[submodule "bundle/gtk-vim-syntax"]
+	path = bundle/gtk-vim-syntax
+	url = https://github.com/vim-scripts/gtk-vim-syntax.git
+[submodule "bundle/scons.vim"]
+	path = bundle/scons.vim
+	url = https://github.com/vim-scripts/scons.vim.git

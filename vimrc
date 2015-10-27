@@ -68,6 +68,7 @@ colorscheme solarized
 
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
+autocmd BufNewFile,BufRead *.h set filetype=c
 autocmd BufWritePost *.c :UpdateTypesFile
 autocmd BufWritePost *.h :UpdateTypesFile
 
@@ -81,8 +82,11 @@ augroup END
 
 nnoremap <F5> :YcmDiags<CR>
 nnoremap <F4> :set hlsearch!<CR>
+cnoreabbrev S Subvert
 
 vmap <Enter> <Plug>(EasyAlign)
+
+
 
 "let g:syntastic_quiet_messages          = { "type" : "style" }
 let g:syntastic_aggregate_errors        = 1
@@ -108,6 +112,8 @@ let g:ycm_complete_in_comments                     = 1 " Completion in comments
 let g:ycm_complete_in_strings                      = 1 " Completion in string
 let g:ycm_autoclose_preview_window_after_insertion = 1
 nnoremap <F2> :YcmCompleter FixIt<CR>
+
+let g:NERDSpaceDelims = 1
 
 call submode#enter_with('splits', 'n', '', '<C-w>', '<Nop>')
 call submode#map('splits',        'n', '', 'l',     '<C-w>l')
