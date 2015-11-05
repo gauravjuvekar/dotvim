@@ -2,7 +2,6 @@
 syntax on
 filetype plugin indent on
 call pathogen#infect()
-
 set number
 set showmatch
 
@@ -12,8 +11,8 @@ set smarttab
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
-set textwidth=79
-set colorcolumn=79
+set textwidth=80
+set colorcolumn=80
 
 set foldmethod=syntax
 set foldlevelstart=99
@@ -119,10 +118,12 @@ let g:NERDSpaceDelims = 1
 call submode#enter_with('splits', 'n', '', '<C-w>', '<Nop>')
 call submode#map('splits',        'n', '', 'l',     '<C-w>l')
 call submode#map('splits',        'n', '', 'h',     '<C-w>h')
-call submode#map('splits',        'n', '', 'l',     '<C-w>l')
-call submode#map('splits',        'n', '', 'h',     '<C-w>h')
 call submode#map('splits',        'n', '', 'k',     '<C-w>k')
 call submode#map('splits',        'n', '', 'j',     '<C-w>j')
+call submode#map('splits',        'n', '', 'L',     '<C-w>L')
+call submode#map('splits',        'n', '', 'H',     '<C-w>H')
+call submode#map('splits',        'n', '', 'K',     '<C-w>K')
+call submode#map('splits',        'n', '', 'J',     '<C-w>J')
 call submode#map('splits',        'n', '', '+',     '<C-w>+')
 call submode#map('splits',        'n', '', '-',     '<C-w>-')
 call submode#map('splits',        'n', '', '<lt>',  '<C-w><lt>')
