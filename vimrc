@@ -87,6 +87,8 @@ cnoreabbrev S Subvert
 vmap <Enter> <Plug>(EasyAlign)
 
 
+let g:easytags_async = 1
+let g:easytags_dynamic_files = 2
 
 "let g:syntastic_quiet_messages          = { "type" : "style" }
 let g:syntastic_aggregate_errors        = 1
@@ -99,10 +101,10 @@ let g:airline_powerline_fonts = 1
 
 let g:ycm_register_as_syntastic_checker            = 1
 let g:Show_diagnostics_ui                          = 1
-let g:ycm_enable_diagnostic_signs = 1
-let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_always_populate_location_list = 1 "default 0
-let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
+let g:ycm_enable_diagnostic_signs                  = 1
+let g:ycm_enable_diagnostic_highlighting           = 0
+let g:ycm_always_populate_location_list            = 1 "default 0
+let g:ycm_open_loclist_on_ycm_diags                = 1 "default 1
 let g:ycm_global_ycm_extra_conf                    = '~/.vim/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf                       = 0
 let g:ycm_collect_identifiers_from_tags_files      = 1 " Let YCM read tags from Ctags file"
@@ -116,16 +118,16 @@ nnoremap <F2> :YcmCompleter FixIt<CR>
 let g:NERDSpaceDelims = 1
 
 call submode#enter_with('splits', 'n', '', '<C-w>', '<Nop>')
-call submode#map('splits',        'n', '', 'l',     '<C-w>l')
-call submode#map('splits',        'n', '', 'h',     '<C-w>h')
-call submode#map('splits',        'n', '', 'k',     '<C-w>k')
-call submode#map('splits',        'n', '', 'j',     '<C-w>j')
-call submode#map('splits',        'n', '', 'L',     '<C-w>L')
-call submode#map('splits',        'n', '', 'H',     '<C-w>H')
-call submode#map('splits',        'n', '', 'K',     '<C-w>K')
-call submode#map('splits',        'n', '', 'J',     '<C-w>J')
-call submode#map('splits',        'n', '', '+',     '<C-w>+')
-call submode#map('splits',        'n', '', '-',     '<C-w>-')
-call submode#map('splits',        'n', '', '<lt>',  '<C-w><lt>')
-call submode#map('splits',        'n', '', '>',     '<C-w>>')
+call submode#map('splits', 'n', '', 'l',    '<C-w>l')
+call submode#map('splits', 'n', '', 'h',    '<C-w>h')
+call submode#map('splits', 'n', '', 'k',    '<C-w>k')
+call submode#map('splits', 'n', '', 'j',    '<C-w>j')
+call submode#map('splits', 'n', '', 'L',    '<C-w>L')
+call submode#map('splits', 'n', '', 'H',    '<C-w>H')
+call submode#map('splits', 'n', '', 'K',    '<C-w>K')
+call submode#map('splits', 'n', '', 'J',    '<C-w>J')
+call submode#map('splits', 'n', '', '+',    '<C-w>+')
+call submode#map('splits', 'n', '', '-',    '<C-w>-')
+call submode#map('splits', 'n', '', '<lt>', '<C-w><lt>')
+call submode#map('splits', 'n', '', '>',    '<C-w>>')
 
