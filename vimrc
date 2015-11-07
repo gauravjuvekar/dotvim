@@ -76,8 +76,8 @@ autocmd BufWritePost *.h :UpdateTypesFile
 "Highlight words
 augroup HiglightTODO
     autocmd!
-    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TRWTF', -1) |\
-                                         call matchadd('Todo', 'WTF', -1)
+    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TRWTF', -1) |
+				\                        call matchadd('Todo', 'WTF', -1)
 augroup END
 
 
@@ -94,17 +94,18 @@ let g:easytags_dynamic_files = 2
 "let g:syntastic_quiet_messages          = { "type" : "style" }
 let g:syntastic_aggregate_errors        = 1
 let g:syntastic_python_pylint_args      = [
-			\ "--disable=bad-whitespace",
-			\ "--disable=invalid-name",
-			\ "--disable=superfluous-parens",
-			\ "--disable=missing-docstring",
-			\ "--disable=bad-continuation"
+			\ "\--disable=bad-whitespace",
+			\ "\--disable=invalid-name",
+			\ "\--disable=superfluous-parens",
+			\ "\--disable=missing-docstring",
+			\ "\--disable=bad-continuation"
 			\ ]
 let g:syntastic_python_flake8_args      = "--disable=W0141,E221"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
 
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts            = 1
+let g:airline#extensions#tabline#enabled = 1
 
 let g:ycm_register_as_syntastic_checker            = 1
 let g:Show_diagnostics_ui                          = 1
