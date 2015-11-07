@@ -76,7 +76,8 @@ autocmd BufWritePost *.h :UpdateTypesFile
 "Highlight words
 augroup HiglightTODO
     autocmd!
-    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TRWTF', -1) | call matchadd('Todo', 'WTF', -1)
+    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TRWTF', -1) |\
+                                         call matchadd('Todo', 'WTF', -1)
 augroup END
 
 
@@ -92,7 +93,13 @@ let g:easytags_dynamic_files = 2
 
 "let g:syntastic_quiet_messages          = { "type" : "style" }
 let g:syntastic_aggregate_errors        = 1
-let g:syntastic_python_pylint_args      = "--disable=bad-whitespace --disable=invalid-name --disable=superfluous-parens --disable=missing-docstring --disable=bad-continuation"
+let g:syntastic_python_pylint_args      = [
+			\ "--disable=bad-whitespace",
+			\ "--disable=invalid-name",
+			\ "--disable=superfluous-parens",
+			\ "--disable=missing-docstring",
+			\ "--disable=bad-continuation"
+			\ ]
 let g:syntastic_python_flake8_args      = "--disable=W0141,E221"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
@@ -107,7 +114,7 @@ let g:ycm_always_populate_location_list            = 1 "default 0
 let g:ycm_open_loclist_on_ycm_diags                = 1 "default 1
 let g:ycm_global_ycm_extra_conf                    = '~/.vim/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf                       = 0
-let g:ycm_collect_identifiers_from_tags_files      = 1 " Let YCM read tags from Ctags file"
+let g:ycm_collect_identifiers_from_tags_files      = 1 " Let YCM read tags from Ctags file
 let g:ycm_use_ultisnips_completer                  = 1 " Default 1, just ensure
 let g:ycm_seed_identifiers_with_syntax             = 1 " Completion for programming language's keyword
 let g:ycm_complete_in_comments                     = 1 " Completion in comments
