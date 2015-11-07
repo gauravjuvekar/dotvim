@@ -86,11 +86,18 @@ nnoremap <F5> :YcmDiags<CR>
 nnoremap <F4> :set hlsearch!<CR>
 cnoreabbrev S Subvert
 
-vmap <Enter> <Plug>(EasyAlign)
+
+" Git gutter config
+let g:gitgutter_sign_added              = '+'
+let g:gitgutter_sign_modified           = '*'
+let g:gitgutter_sign_removed            = '-'
+let g:gitgutter_sign_removed_first_line = '^'
+let g:gitgutter_sign_modified_removed   = '#'
 
 
 let g:easytags_async = 1
 let g:easytags_dynamic_files = 2
+
 
 "let g:syntastic_quiet_messages          = { "type" : "style" }
 let g:syntastic_aggregate_errors        = 1
@@ -105,7 +112,7 @@ let g:syntastic_python_flake8_args      = "--disable=W0141,E221"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
 
-let g:airline_powerline_fonts            = 1
+let g:airline_powerline_fonts = 1
 
 let g:ycm_register_as_syntastic_checker            = 1
 let g:Show_diagnostics_ui                          = 1
