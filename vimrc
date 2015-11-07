@@ -105,7 +105,6 @@ let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
 
 let g:airline_powerline_fonts            = 1
-let g:airline#extensions#tabline#enabled = 1
 
 let g:ycm_register_as_syntastic_checker            = 1
 let g:Show_diagnostics_ui                          = 1
