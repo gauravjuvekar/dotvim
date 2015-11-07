@@ -4,6 +4,7 @@ filetype plugin indent on
 call pathogen#infect()
 set number
 set showmatch
+set incsearch
 
 " Alignments and indents
 set autoindent
