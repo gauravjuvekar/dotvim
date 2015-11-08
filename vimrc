@@ -27,6 +27,8 @@ set laststatus=2
 set cindent
 set cino+=(0
 
+set tags=./tags,./TAGS,tags,TAGS,../tags,~/.vimtags
+
 "Strip trailing whitespaces on write
 function! <SID>StripTrailingWhitespaces()
     let l = line(".")
@@ -85,6 +87,7 @@ augroup END
 nnoremap <F5> :YcmDiags<CR>
 nnoremap <F4> :set hlsearch!<CR>
 cnoreabbrev S Subvert
+vmap <Enter> <Plug>(EasyAlign)
 
 
 " Git gutter config
