@@ -25,7 +25,7 @@ set laststatus=2
 
 "Indent to opening paren
 set cindent
-set cino+=(0
+set cino+=(0,W1s,u0,U0
 
 set tags=./tags,./TAGS,tags,TAGS,../tags,~/.vimtags
 
@@ -61,8 +61,9 @@ let g:secure_modelines_allowed_items = [
 set clipboard=unnamedplus
 
 " Make shift tab work
-map <Esc>[Z <s-tab>
-ounmap <Esc>[Z
+exe 'set t_kB=' . nr2char(27) . '[Z'
+" Set it to up so YCM can use it
+imap <s-tab> <up>
 
 set t_Co=256
 set background=dark
@@ -84,7 +85,6 @@ augroup HiglightTODO
 augroup END
 
 
-nnoremap <F5> :YcmDiags<CR>
 nnoremap <F4> :set hlsearch!<CR>
 cnoreabbrev S Subvert
 vmap <Enter> <Plug>(EasyAlign)
@@ -132,6 +132,8 @@ let g:ycm_complete_in_comments                     = 1 " Completion in comments
 let g:ycm_complete_in_strings                      = 1 " Completion in string
 let g:ycm_autoclose_preview_window_after_insertion = 1
 nnoremap <F2> :YcmCompleter FixIt<CR>
+nnoremap <F3> :YcmCompleter GetDoc<CR>
+nnoremap <F5> :YcmDiags<CR>
 
 let g:NERDSpaceDelims = 1
 
