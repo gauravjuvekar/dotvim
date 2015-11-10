@@ -79,9 +79,6 @@
 [submodule "bundle/vim-speeddating"]
 	path = bundle/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git
-[submodule "bundle/vim-easytags"]
-	path = bundle/vim-easytags
-	url = https://github.com/xolox/vim-easytags
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
@@ -109,3 +106,9 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/vim-autotag"]
+	path = bundle/vim-autotag
+	url = https://github.com/craigemery/vim-autotag.git
+[submodule "bundle/vim-gutentags"]
+	path = bundle/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags

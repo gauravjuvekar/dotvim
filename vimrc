@@ -27,8 +27,6 @@ set laststatus=2
 set cindent
 set cino+=(0,W1s,u0,U0
 
-set tags=./tags,./TAGS,tags,TAGS,../tags,~/.vimtags
-
 "Strip trailing whitespaces on write
 function! <SID>StripTrailingWhitespaces()
     let l = line(".")
@@ -38,7 +36,6 @@ function! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd BufWritePre * :call<SID>StripTrailingWhitespaces()
-
 
 let g:secure_modelines_allowed_items = [
 	\ "textwidth",   "tw",
@@ -73,9 +70,9 @@ autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
 autocmd BufNewFile,BufRead *.h set filetype=c
 autocmd BufNewFile,BufRead SCon* set filetype=scons
+
 autocmd BufWritePost *.c :UpdateTypesFile
 autocmd BufWritePost *.h :UpdateTypesFile
-
 
 "Highlight words
 augroup HiglightTODO
@@ -96,10 +93,6 @@ let g:gitgutter_sign_modified           = '*'
 let g:gitgutter_sign_removed            = '-'
 let g:gitgutter_sign_removed_first_line = '^'
 let g:gitgutter_sign_modified_removed   = '#'
-
-
-let g:easytags_async = 1
-let g:easytags_dynamic_files = 2
 
 
 "let g:syntastic_quiet_messages          = { "type" : "style" }
