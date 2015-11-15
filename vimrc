@@ -127,6 +127,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 nnoremap <F2> :YcmCompleter FixIt<CR>
 nnoremap <F3> :YcmCompleter GetDoc<CR>
 nnoremap <F5> :YcmDiags<CR>
+nnoremap <F6> :pclose<CR>
 
 let g:NERDSpaceDelims = 1
 
