@@ -1,4 +1,5 @@
 " Pathogen
+let g:pathogen_disabled = ['gtk-vim-syntax']
 syntax on
 filetype plugin indent on
 call pathogen#infect()
