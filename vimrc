@@ -67,6 +67,12 @@ set t_Co=256
 set background=dark
 colorscheme solarized
 
+hi link DefinedName Macro
+hi link EnumeratorName Type
+hi link EnumerationValue Constant
+hi link GlobalVariable Identifier
+
+
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
 autocmd BufNewFile,BufRead *.h set filetype=c
