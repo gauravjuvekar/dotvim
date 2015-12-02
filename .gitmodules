@@ -115,3 +115,6 @@
 [submodule "bundle/abudden-EasyColour"]
 	path = bundle/abudden-EasyColour
 	url = https://github.com/gauravjuvekar/abudden-EasyColour
+[submodule "bundle/vim-pencil"]
+	path = bundle/vim-pencil
+	url = https://github.com/reedes/vim-pencil
