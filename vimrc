@@ -120,9 +120,11 @@ let g:syntastic_python_pylint_args      = [
 			\ "\--disable=invalid-name",
 			\ "\--disable=superfluous-parens",
 			\ "\--disable=missing-docstring",
+			\ "\--disable=too-few-public-methods",
+			\ "\--disable=too-many-ancestors",
 			\ "\--disable=bad-continuation"
 			\ ]
-let g:syntastic_python_flake8_args      = "--disable=W0141,E221"
+" let g:syntastic_python_flake8_args      = "--disable=W0141,E221"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
 
