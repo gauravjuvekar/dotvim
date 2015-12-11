@@ -151,6 +151,9 @@ nnoremap <F6> :pclose<CR>
 
 let g:NERDSpaceDelims = 1
 
+let g:LatexBox_latexmk_preview_continuously = 1
+let g:LatexBox_quickfix = 2
+
 call submode#enter_with('splits', 'n', '', '<C-w>', '<Nop>')
 call submode#map('splits', 'n', '', 'l',    '<C-w>l')
 call submode#map('splits', 'n', '', 'h',    '<C-w>h')
