@@ -78,6 +78,7 @@ hi link GlobalVariable Identifier
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
 autocmd BufNewFile,BufRead *.h set filetype=c
+autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead SCon* set filetype=scons
 
 autocmd BufWritePost *.c :UpdateTypesFile
@@ -88,6 +89,14 @@ augroup HiglightTODO
     autocmd!
     autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TRWTF', -1) |
 				\                        call matchadd('Todo', 'WTF', -1)
+augroup END
+
+" vim-pencil
+augroup pencil
+	autocmd!
+	autocmd Filetype markdown,mkd call pencil#init({'wrap': 'soft'})
+	autocmd Filetype text         call pencil#init({'wrap': 'soft'})
+	autocmd Filetype mail         call pencil#init({'wrap': 'soft'})
 augroup END
 
 
