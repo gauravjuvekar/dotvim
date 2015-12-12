@@ -24,6 +24,9 @@ set formatoptions+=t
 set scrolloff=4
 set laststatus=2
 
+set wildmode=longest,list,full
+set wildmenu
+
 "Indent to opening paren
 set cindent
 set cino+=(0,W1s,u0,U0
