@@ -1,9 +1,6 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
-[submodule "bundle/delimitMate"]
-	path = bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate
 [submodule "bundle/gitv"]
 	path = bundle/gitv
 	url = https://github.com/gregsexton/gitv.git
@@ -121,3 +118,6 @@
 [submodule "bundle/LaTeX-Box"]
 	path = bundle/LaTeX-Box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
