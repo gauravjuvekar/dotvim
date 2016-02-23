@@ -121,3 +121,6 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
+[submodule "bundle/cmocka.vim"]
+	path = bundle/cmocka.vim
+	url = https://github.com/DanSnow/cmocka.vim
