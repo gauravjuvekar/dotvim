@@ -116,9 +116,11 @@ let g:gitgutter_sign_removed_first_line = '^'
 let g:gitgutter_sign_modified_removed   = '#'
 
 
-"let g:syntastic_quiet_messages          = { "type" : "style" }
-let g:syntastic_aggregate_errors        = 1
-let g:syntastic_python_pylint_args      = [
+"let g:syntastic_quiet_messages     = { "type" : "style" }
+let g:syntastic_python_python_exec = '/usr/bin/python3'
+let g:syntastic_python_checkers    = ['flake8']
+let g:syntastic_aggregate_errors   = 1
+let g:syntastic_python_pylint_args = [
 			\ "\--disable=bad-whitespace",
 			\ "\--disable=invalid-name",
 			\ "\--disable=superfluous-parens",
@@ -126,6 +128,7 @@ let g:syntastic_python_pylint_args      = [
 			\ "\--disable=too-few-public-methods",
 			\ "\--disable=too-many-ancestors",
 			\ "\--disable=bad-continuation",
+			\ "\--disable=no-init",
 			\ "\--dummy-variables-rgx=_.*"
 			\ ]
 " let g:syntastic_python_flake8_args      = "--disable=W0141,E221"
@@ -148,6 +151,8 @@ let g:ycm_seed_identifiers_with_syntax             = 1 " Completion for programm
 let g:ycm_complete_in_comments                     = 1 " Completion in comments
 let g:ycm_complete_in_strings                      = 1 " Completion in string
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_python_binary_path = '/usr/bin/python3'
+
 nnoremap <F2> :YcmCompleter FixIt<CR>
 nnoremap <F3> :YcmCompleter GetDoc<CR>
 nnoremap <F5> :YcmDiags<CR>
