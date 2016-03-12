@@ -160,6 +160,8 @@ nnoremap <F6> :pclose<CR>
 
 let g:NERDSpaceDelims = 1
 
+let g:UltiSnipsExpandTrigger="<c-space>"
+
 let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_quickfix = 2
 
