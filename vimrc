@@ -4,6 +4,7 @@ syntax on
 filetype plugin indent on
 call pathogen#infect()
 set number
+set relativenumber
 set showmatch
 set incsearch
 
