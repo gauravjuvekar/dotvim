@@ -180,3 +180,4 @@ call submode#map('splits', 'n', '', '-',    '<C-w>-')
 call submode#map('splits', 'n', '', '<lt>', '<C-w><lt>')
 call submode#map('splits', 'n', '', '>',    '<C-w>>')
 
+iab tnow <c-r>=strftime("%FT%T%z")<cr>
