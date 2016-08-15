@@ -100,11 +100,14 @@ augroup END
 " vim-pencil
 augroup pencil
 	autocmd!
-	autocmd Filetype markdown,mkd call pencil#init({'wrap': 'soft'})
-	autocmd Filetype text         call pencil#init({'wrap': 'soft'})
-	autocmd Filetype mail         call pencil#init({'wrap': 'soft'})
+	autocmd Filetype markdown,mkd,text,mail call pencil#init({'wrap': 'soft'})
 augroup END
 
+" spellcheck
+augroup spellcheck
+	autocmd!
+	autocmd Filetype markdown,mkd,text,mail set spell spelllang=en
+augroup END
 
 nnoremap <F4> :set hlsearch!<CR>
 cnoreabbrev S Subvert
