@@ -32,7 +32,9 @@ set wildmenu
 set cindent
 set cino+=(0,W1s,u0,U0
 
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
+" Required as underscores appear as space in gvim otherwise
+set linespace=4
 
 "Strip trailing whitespaces on write
 function! <SID>StripTrailingWhitespaces()
