@@ -1,5 +1,6 @@
 " Pathogen
-let g:pathogen_disabled = ['gtk-vim-syntax']
+let g:pathogen_disabled = ['gtk-vim-syntax', 'supertab']
+
 syntax on
 filetype plugin indent on
 call pathogen#infect()
@@ -157,8 +158,8 @@ let g:ycm_seed_identifiers_with_syntax             = 1 " Completion for programm
 let g:ycm_complete_in_comments                     = 1 " Completion in comments
 let g:ycm_complete_in_strings                      = 1 " Completion in string
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_key_list_select_completion = ['<c-n>', '<Down>', '<tab>']
-let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>', '<s-tab']
+" let g:ycm_key_list_select_completion = ['<tab>', '<C-j>', '<Down>', '<C-n>']
+" let g:ycm_key_list_previous_completion = ['<s-tab>', '<C-k>', '<Up>', '<C-p>']
 let g:ycm_python_binary_path = '/usr/bin/python3'
 
 nnoremap <F2> :YcmCompleter FixIt<CR>
@@ -167,13 +168,14 @@ nnoremap <F5> :YcmDiags<CR>
 nnoremap <F6> :pclose<CR>
 
 let g:NERDSpaceDelims = 1
+let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsSnippetDirectories = ["UltiSnips"]
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsExpandTrigger = "<c-l>"
+let g:UltiSnipsJumpForwardTrigger = "<c-l>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
 
-" Attempt to make YCM work with ultisnips through supertab
-" let g:SuperTabDefaultCompletionType = '<c-n>'
-
-let g:UltiSnipsExpandTrigger = "<c-space>"
-let g:UltiSnipsJumpForwardTrigger = "<c-space>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-s-space>"
+nnoremap <leader>ue :UltiSnipsEdit<cr>
 
 let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_quickfix = 2
