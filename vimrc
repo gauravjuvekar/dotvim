@@ -38,6 +38,17 @@ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
 " Required as underscores appear as space in gvim otherwise
 set linespace=4
 
+" Add modeline after current line
+" Use substitute() instead of printf() to handle '%%s' modeline in LaTeX
+" files.
+function! AddModeline()
+  let l:modeline = printf(" vim: set ts=%d sw=%d tw=%d sts=%d %set :",
+        \ &tabstop, &shiftwidth, &textwidth, &softtabstop, &expandtab ? '' : 'no')
+  let l:modeline = substitute(&commentstring, "%s", l:modeline, "")
+  call append(line("."), l:modeline)
+endfunction
+nnoremap <silent> <Leader>ml :call AddModeline()<CR>
+
 "Strip trailing whitespaces on write
 function! <SID>StripTrailingWhitespaces()
     let l = line(".")
