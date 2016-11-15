@@ -28,6 +28,7 @@ set laststatus=2
 
 set wildmode=longest,list,full
 set wildmenu
+set backspace=indent,eol,start
 
 "Indent to opening paren
 set cindent
