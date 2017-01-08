@@ -11,6 +11,7 @@ set incsearch
 
 " Alignments and indents
 set autoindent
+set smartindent
 set smarttab
 set softtabstop=4
 set tabstop=4
