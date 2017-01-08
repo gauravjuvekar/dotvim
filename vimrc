@@ -1,11 +1,18 @@
 " Pathogen
 let g:pathogen_disabled = ['gtk-vim-syntax', 'supertab']
 
+
 syntax on
 filetype plugin indent on
 call pathogen#infect()
+
+
+" Line numbering
 set number
 set relativenumber
+
+
+" Search highlighting
 set showmatch
 set incsearch
 " Keymap to toggle highlight
@@ -22,17 +29,28 @@ set shiftwidth=4
 set textwidth=80
 set colorcolumn=80
 
+" Code folding
 set foldmethod=syntax
 set foldlevelstart=99
 
+
 set formatoptions+=t
 
+
+" Keep these many context lines visible above or below current line
 set scrolloff=4
+
 set laststatus=2
 
+
+" Sets tab behavior for lists
 set wildmode=longest,list,full
 set wildmenu
+
+
+" How should multiple backspaces behave
 set backspace=indent,eol,start
+
 
 "Indent to opening paren
 " set cindent
@@ -43,6 +61,7 @@ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
 " Required as underscores appear as space in gvim otherwise
 set linespace=4
 
+
 " Add modeline after current line
 " Use substitute() instead of printf() to handle '%%s' modeline in LaTeX
 " files.
@@ -52,9 +71,11 @@ function! AddModeline()
   let l:modeline = substitute(&commentstring, "%s", l:modeline, "")
   call append(line("."), l:modeline)
 endfunction
+" Use \ml to add the modeline
 nnoremap <silent> <Leader>ml :call AddModeline()<CR>
 
-"Strip trailing whitespaces on write
+
+" Strip trailing whitespaces on write
 function! <SID>StripTrailingWhitespaces()
     let l = line(".")
     let c = col(".")
@@ -63,6 +84,7 @@ function! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd BufWritePre * :call<SID>StripTrailingWhitespaces()
+
 
 let g:secure_modelines_allowed_items = [
 	\ "textwidth",   "tw",
@@ -82,23 +104,30 @@ let g:secure_modelines_allowed_items = [
 	\ "spelllang"
 	\ ]
 
+" Global clip board as +
+" Mouse buffer is *
 set clipboard=unnamedplus
+
 
 " Make shift tab work
 exe 'set t_kB=' . nr2char(27) . '[Z'
 " Set it to up so YCM can use it
 imap <s-tab> <up>
 
+
 set t_Co=256
 set background=dark
 colorscheme solarized
 
+
+" Use these colors instead of the defaults
 hi link DefinedName Macro
 hi link EnumeratorName Type
 hi link EnumerationValue Constant
 hi link GlobalVariable Identifier
 
 
+" Change some filetype for better syntax support
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
 autocmd BufNewFile,BufRead *.md set filetype=markdown
@@ -132,13 +161,19 @@ augroup pencil
 	autocmd Filetype markdown,mkd,text,mail call pencil#init({'wrap': 'soft'})
 augroup END
 
+
 " spellcheck
 augroup spellcheck
 	autocmd!
 	autocmd Filetype markdown,mkd,text,mail set spell spelllang=en
 augroup END
 
+
+" Use S for substitution with smart capitalization
 cnoreabbrev S Subvert
+
+
+" For alignments (like on = signs)
 vmap <Enter> <Plug>(EasyAlign)
 
 
@@ -169,7 +204,9 @@ let g:syntastic_python_flake8_args      = "--disable=W0141,E221,E731"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
 
+
 let g:airline_powerline_fonts = 1
+
 
 let g:ycm_register_as_syntastic_checker            = 1
 let g:Show_diagnostics_ui                          = 1
@@ -192,19 +229,22 @@ let g:ycm_python_binary_path = '/usr/bin/python3'
 nnoremap <F2> :YcmCompleter FixIt<CR>
 nnoremap <F3> :YcmCompleter GetDoc<CR>
 nnoremap <F5> :YcmDiags<CR>
+" Close the preview window or tags list. Use :ccl for the tags list also
 nnoremap <F6> :pclose<CR>
 nnoremap <F7> :ptag<CR>
 
 
 let g:NERDSpaceDelims = 1
+
+
 let g:UltiSnipsUsePythonVersion = 2
 let g:UltiSnipsSnippetDirectories = ["UltiSnips"]
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsExpandTrigger = "<c-l>"
 let g:UltiSnipsJumpForwardTrigger = "<c-l>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
-
 nnoremap <leader>ue :UltiSnipsEdit<cr>
+
 
 let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_quickfix = 2
@@ -227,4 +267,7 @@ endfor
 for key in ['=', '_', '+', '-', '<', '>', '{', '}', '[', ']']
 	call submode#map('window', 'n', '', key, '<C-w>' . key)
 endfor
+
+
+" Autoinsert current time with tnow
 iab tnow <c-r>=strftime("%FT%T%z")<cr>
