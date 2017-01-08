@@ -8,6 +8,9 @@ set number
 set relativenumber
 set showmatch
 set incsearch
+" Keymap to toggle highlight
+nnoremap <F4> :set hlsearch!<CR>
+
 
 " Alignments and indents
 set autoindent
@@ -135,7 +138,6 @@ augroup spellcheck
 	autocmd Filetype markdown,mkd,text,mail set spell spelllang=en
 augroup END
 
-nnoremap <F4> :set hlsearch!<CR>
 cnoreabbrev S Subvert
 vmap <Enter> <Plug>(EasyAlign)
 
