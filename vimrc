@@ -193,6 +193,8 @@ nnoremap <F2> :YcmCompleter FixIt<CR>
 nnoremap <F3> :YcmCompleter GetDoc<CR>
 nnoremap <F5> :YcmDiags<CR>
 nnoremap <F6> :pclose<CR>
+nnoremap <F7> :ptag<CR>
+
 
 let g:NERDSpaceDelims = 1
 let g:UltiSnipsUsePythonVersion = 2
