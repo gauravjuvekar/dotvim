@@ -97,12 +97,23 @@ hi link GlobalVariable Identifier
 
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
-autocmd BufNewFile,BufRead *.h set filetype=c
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead SCon* set filetype=scons
 
-autocmd BufWritePost *.c :UpdateTypesFile
-autocmd BufWritePost *.h :UpdateTypesFile
+
+" Set sub-highlight to doxygen syntax for c sources and headers
+augroup DoxygenizeCFiles
+	autocmd!
+	autocmd BufNewFile,BufRead *.h,*.c set filetype=c.doxygen
+augroup END
+
+
+" Force update types files (for syntax coloring)
+augroup UpdateTypesFiles
+	autocmd!
+	autocmd BufWritePost *.h,*.c :UpdateTypesFile
+augroup END
+
 
 "Highlight words
 augroup HiglightTODO
