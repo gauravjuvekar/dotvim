@@ -194,6 +194,10 @@ let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_quickfix = 2
 
 
+" Use \w, etc to go to the next camel word
+call camelcasemotion#CreateMotionMappings('<leader>')
+
+
 " Configure submodes so as to not press ctrl + W for every split adjustment
 call submode#enter_with('window', 'n', '', '<C-w>')
 call submode#leave_with('window', 'n', '', '<ESC>')
