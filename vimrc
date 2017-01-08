@@ -31,8 +31,9 @@ set wildmenu
 set backspace=indent,eol,start
 
 "Indent to opening paren
-set cindent
-set cino+=(0,W1s,u0,U0
+" set cindent
+" set cino+=(0,W1s,u0,U0
+
 
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
 " Required as underscores appear as space in gvim otherwise
