@@ -192,18 +192,18 @@ nnoremap <leader>ue :UltiSnipsEdit<cr>
 let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_quickfix = 2
 
-call submode#enter_with('splits', 'n', '', '<C-w>', '<Nop>')
-call submode#map('splits', 'n', '', 'l',    '<C-w>l')
-call submode#map('splits', 'n', '', 'h',    '<C-w>h')
-call submode#map('splits', 'n', '', 'k',    '<C-w>k')
-call submode#map('splits', 'n', '', 'j',    '<C-w>j')
-call submode#map('splits', 'n', '', 'L',    '<C-w>L')
-call submode#map('splits', 'n', '', 'H',    '<C-w>H')
-call submode#map('splits', 'n', '', 'K',    '<C-w>K')
-call submode#map('splits', 'n', '', 'J',    '<C-w>J')
-call submode#map('splits', 'n', '', '+',    '<C-w>+')
-call submode#map('splits', 'n', '', '-',    '<C-w>-')
-call submode#map('splits', 'n', '', '<lt>', '<C-w><lt>')
-call submode#map('splits', 'n', '', '>',    '<C-w>>')
 
+" Configure submodes so as to not press ctrl + W for every split adjustment
+call submode#enter_with('window', 'n', '', '<C-w>')
+call submode#leave_with('window', 'n', '', '<ESC>')
+for key in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+		\   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+	call submode#map('window', 'n', '', key, '<C-w>' . key)
+	call submode#map('window', 'n', '', toupper(key), '<C-w>' . toupper(key))
+	call submode#map('window', 'n', '', '<C-' . key . '>', '<C-w>' . '<C-' . key . '>')
+	call submode#map('window', 'n', '', '<C-' . toupper(key) . '>', '<C-w>' . '<C-' . toupper(key) . '>')
+endfor
+for key in ['=', '_', '+', '-', '<', '>', '{', '}', '[', ']']
+	call submode#map('window', 'n', '', key, '<C-w>' . key)
+endfor
 iab tnow <c-r>=strftime("%FT%T%z")<cr>
