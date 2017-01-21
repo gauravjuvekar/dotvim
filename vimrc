@@ -135,10 +135,13 @@ autocmd BufNewFile,BufRead SCon* set filetype=scons
 
 
 " Set sub-highlight to doxygen syntax for c sources and headers
+
+let g:load_doxygen_syntax = 1
 augroup DoxygenizeCFiles
 	autocmd!
-	autocmd BufNewFile,BufRead *.h,*.c set filetype=c.doxygen
+	autocmd BufNewFile,BufRead *.h,*.c set filetype=c
 augroup END
+
 
 
 " Force update types files (for syntax coloring)
