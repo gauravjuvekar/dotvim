@@ -56,6 +56,10 @@ set backspace=indent,eol,start
 " set cindent
 " set cino+=(0,W1s,u0,U0
 
+"Dont automatically change to project roo
+let g:rooter_manual_only = 1
+set autochdir
+
 
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
 " Required as underscores appear as space in gvim otherwise
@@ -135,7 +139,6 @@ autocmd BufNewFile,BufRead SCon* set filetype=scons
 
 
 " Set sub-highlight to doxygen syntax for c sources and headers
-
 let g:load_doxygen_syntax = 1
 augroup DoxygenizeCFiles
 	autocmd!
@@ -276,3 +279,5 @@ endfor
 
 " Autoinsert current time with tnow
 iab tnow <c-r>=strftime("%FT%T%z")<cr>
+
+
