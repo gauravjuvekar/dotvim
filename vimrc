@@ -21,7 +21,6 @@ nnoremap <F4> :set hlsearch!<CR>
 
 " Alignments and indents
 set autoindent
-set smartindent
 set smarttab
 set softtabstop=4
 set tabstop=4
@@ -252,6 +251,12 @@ let g:UltiSnipsExpandTrigger = "<c-l>"
 let g:UltiSnipsJumpForwardTrigger = "<c-l>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
 nnoremap <leader>ue :UltiSnipsEdit<cr>
+
+" CtrlP stuff
+let g:ctrlp_extensions = ['undo', 'changes', 'tag', 'buffertag', 'mixed']
+let g:ctrlp_cmd = 'CtrlPMixed'
+nnoremap <c-i> :CtrlPTag<CR>
+
 
 
 let g:LatexBox_latexmk_preview_continuously = 1
