@@ -1,3 +1,3 @@
 :setlocal expandtab
-:setlocal textwidth=80
-:setlocal colorcolumn=80
+:setlocal textwidth=79
+:setlocal colorcolumn=79

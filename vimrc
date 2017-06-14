@@ -192,9 +192,13 @@ nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
 
 
+"python indents
+let g:pyindent_continue = '&sw'
+let g:pyindent_open_paren = '&sw'
+
 "let g:syntastic_quiet_messages     = { "type" : "style" }
 let g:syntastic_python_python_exec = '/usr/bin/python3'
-let g:syntastic_python_checkers    = ['flake8']
+let g:syntastic_python_checkers    = ['flake8', 'pep8']
 let g:syntastic_aggregate_errors   = 1
 let g:syntastic_python_pylint_args = [
 			\ "\--disable=bad-whitespace",
@@ -207,7 +211,7 @@ let g:syntastic_python_pylint_args = [
 			\ "\--disable=no-init",
 			\ "\--dummy-variables-rgx=_.*"
 			\ ]
-let g:syntastic_python_flake8_args      = "--disable=W0141,E221,E731"
+" let g:syntastic_python_flake8_args      = "--disable=W0141,E221,E731"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
 
