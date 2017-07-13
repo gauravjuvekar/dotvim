@@ -260,7 +260,8 @@ nnoremap <leader>ue :UltiSnipsEdit<cr>
 let g:ctrlp_extensions = ['undo', 'changes', 'tag', 'buffertag', 'mixed']
 let g:ctrlp_cmd = 'CtrlPMixed'
 nnoremap <c-i> :CtrlPTag<CR>
-
+" Now use C-u for going forward in the jumplist
+nnoremap <C-u> <C-i>
 
 
 let g:LatexBox_latexmk_preview_continuously = 1
