@@ -52,8 +52,8 @@ set backspace=indent,eol,start
 
 
 "Indent to opening paren
-" set cindent
-" set cino+=(0,W1s,u0,U0
+set cindent
+set cino+=(0,W1s,u0,U0
 
 "Dont automatically change to project roo
 let g:rooter_manual_only = 1
