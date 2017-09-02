@@ -291,3 +291,5 @@ endfor
 iab tnow <c-r>=strftime("%FT%T%z")<cr>
 
 
+let g:localvimrc_name = [".vimrc"]
+let g:localvimrc_persistent = 2
