@@ -119,7 +119,7 @@ imap <s-tab> <up>
 
 
 set t_Co=256
-set background=dark
+set background=light
 colorscheme solarized
 
 
