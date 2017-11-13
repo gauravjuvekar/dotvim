@@ -154,3 +154,18 @@
 [submodule "bundle/vim-slumlord"]
 	path = bundle/vim-slumlord
 	url = https://github.com/scrooloose/vim-slumlord.git
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim.git
+[submodule "bundle/vim-codequery"]
+	path = bundle/vim-codequery
+	url = https://github.com/devjoe/vim-codequery.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/codi.vim"]
+	path = bundle/codi.vim
+	url = https://github.com/metakirby5/codi.vim.git
+[submodule "bundle/wordCount.vim"]
+	path = bundle/wordCount.vim
+	url = https://github.com/ChesleyTan/wordCount.vim
