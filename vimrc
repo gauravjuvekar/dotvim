@@ -173,6 +173,9 @@ augroup spellcheck
 	autocmd Filetype markdown,mkd,text,mail set spell spelllang=en
 augroup END
 
+" word count
+let g:airline#extensions#wordcount#filetypes = '\vhelp|markdown|rst|org|text'
+
 
 " Use S for substitution with smart capitalization
 cnoreabbrev S Subvert
