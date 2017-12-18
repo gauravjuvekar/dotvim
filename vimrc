@@ -293,6 +293,10 @@ endfor
 " Autoinsert current time with tnow
 iab tnow <c-r>=strftime("%FT%T%z")<cr>
 
+" vim-easymotion
+let g:EasyMotion_smartcase = 1
+nmap f <Plug>(easymotion-overwin-f)
+
 
 let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
