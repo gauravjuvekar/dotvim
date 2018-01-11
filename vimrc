@@ -297,6 +297,9 @@ iab tnow <c-r>=strftime("%FT%T%z")<cr>
 let g:EasyMotion_smartcase = 1
 nmap f <Plug>(easymotion-overwin-f)
 
+" large file support
+let g:hugefile_trigger_size = 256 "MB
+
 
 let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
