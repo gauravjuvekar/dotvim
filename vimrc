@@ -111,6 +111,11 @@ let g:secure_modelines_allowed_items = [
 " Mouse buffer is *
 set clipboard=unnamedplus
 
+" https://superuser.com/a/321726/252728
+" delete or visual paste without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+vnoremap <leader>p "_dP
 
 " Make shift tab work
 exe 'set t_kB=' . nr2char(27) . '[Z'
@@ -214,7 +219,7 @@ let g:syntastic_python_pylint_args = [
 			\ "\--disable=no-init",
 			\ "\--dummy-variables-rgx=_.*"
 			\ ]
-" let g:syntastic_python_flake8_args      = "--disable=W0141,E221,E731"
+let g:syntastic_python_flake8_args      = "--disable=W0141,E221,E731"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
 
