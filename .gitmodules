@@ -109,9 +109,6 @@
 [submodule "bundle/vim-pencil"]
 	path = bundle/vim-pencil
 	url = https://github.com/reedes/vim-pencil
-[submodule "bundle/LaTeX-Box"]
-	path = bundle/LaTeX-Box
-	url = https://github.com/LaTeX-Box-Team/LaTeX-Box
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
@@ -178,3 +175,9 @@
 [submodule "bundle/vim-hugefile"]
 	path = bundle/vim-hugefile
 	url = https://github.com/mhinz/vim-hugefile
+[submodule "bundle/gnuplot.vim"]
+	path = bundle/gnuplot.vim
+	url = https://github.com/vim-scripts/gnuplot.vim
+[submodule "bundle/vimtex"]
+	path = bundle/vimtex
+	url = https://github.com/lervag/vimtex
