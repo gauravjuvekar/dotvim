@@ -313,3 +313,7 @@ let g:hugefile_trigger_size = 256 "MB
 
 let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
+
+" clang-format
+map <c-k> :pyf /usr/share/clang/clang-format-5.0/clang-format.py<cr>
+imap <c-k> <c-o>:pyf /usr/share/clang/clang-format-5.0/clang-format.py<cr>
