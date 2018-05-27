@@ -149,6 +149,9 @@ augroup DoxygenizeCFiles
 	autocmd!
 	autocmd BufNewFile,BufRead *.h,*.c set filetype=c
 augroup END
+hi link doxygenBrief doxygenBody
+hi link doxygenSpecialOneLineDesc doxygenBody
+
 
 
 
