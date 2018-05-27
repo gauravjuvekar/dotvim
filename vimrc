@@ -166,7 +166,8 @@ augroup END
 augroup HiglightTODO
     autocmd!
     autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TRWTF', -1) |
-				\                        call matchadd('Todo', 'WTF', -1)
+				\                        call matchadd('Todo', 'WTF', -1) |
+				\                        call matchadd('Todo', 'todo', -1)
 augroup END
 
 " vim-pencil
