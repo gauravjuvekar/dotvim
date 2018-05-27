@@ -25,7 +25,8 @@ set smarttab
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
-set textwidth=80
+set expandtab
+set textwidth=79
 set colorcolumn=80
 
 " Code folding
