@@ -1,1 +1,3 @@
---exclude=build --c-kinds=+xpl --c++-kinds=+xpl
+--exclude=build
+--c-kinds=+xpl
+--c++-kinds=+xpl
