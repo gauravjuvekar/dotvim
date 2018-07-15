@@ -261,7 +261,7 @@ nnoremap <F7> :ptag<CR>
 let g:NERDSpaceDelims = 1
 
 
-let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsSnippetDirectories = ["UltiSnips"]
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsExpandTrigger = "<c-l>"
@@ -315,5 +315,5 @@ let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
 
 " clang-format
-map <c-k> :pyf /usr/share/clang/clang-format-5.0/clang-format.py<cr>
-imap <c-k> <c-o>:pyf /usr/share/clang/clang-format-5.0/clang-format.py<cr>
+map <c-k> :py3f /usr/share/clang/clang-format-5.0/clang-format.py<cr>
+imap <c-k> <c-o>:py3f /usr/share/clang/clang-format-5.0/clang-format.py<cr>
