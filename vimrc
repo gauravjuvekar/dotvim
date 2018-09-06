@@ -319,5 +319,5 @@ let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
 
 " clang-format
-map <c-k> :py3f /usr/share/clang/clang-format-5.0/clang-format.py<cr>
-imap <c-k> <c-o>:py3f /usr/share/clang/clang-format-5.0/clang-format.py<cr>
+map <c-k> :py3f /usr/share/clang/clang-format.py<cr>
+imap <c-k> <c-o>:py3f /usr/share/clang/clang-format.py<cr>
