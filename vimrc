@@ -319,7 +319,7 @@ let g:localvimrc_persistent = 2
 
 let g:gutentags_modules = ['ctags', 'gtags_cscope']
 let g:gutentags_project_root = ['.root']
-
+let g:gutentags_ctags_extra_args = ['--fields=+l']
 let g:gutentags_cache_dir = expand('~/.cache/vim/tags')
 let g:gutentags_auto_add_gtags_cscope = 0
 let g:gutentags_plus_nomap = 1
