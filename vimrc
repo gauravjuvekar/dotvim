@@ -314,9 +314,26 @@ nmap f <Plug>(easymotion-overwin-f)
 " large file support
 let g:hugefile_trigger_size = 256 "MB
 
-
 let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
+
+let g:gutentags_modules = ['ctags', 'gtags_cscope']
+let g:gutentags_project_root = ['.root']
+
+let g:gutentags_cache_dir = expand('~/.cache/vim/tags')
+let g:gutentags_auto_add_gtags_cscope = 0
+let g:gutentags_plus_nomap = 1
+
+noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
+noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
+noremap <silent> <leader>gc :GscopeFind c <C-R><C-W><cr>
+noremap <silent> <leader>gt :GscopeFind t <C-R><C-W><cr>
+noremap <silent> <leader>ge :GscopeFind e <C-R><C-W><cr>
+noremap <silent> <leader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <leader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
+noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
+
 
 " clang-format
 map <c-k> :py3f /usr/share/clang/clang-format.py<cr>

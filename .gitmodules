@@ -184,3 +184,6 @@
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg
+[submodule "bundle/gutentags_plus"]
+	path = bundle/gutentags_plus
+	url = https://github.com/skywind3000/gutentags_plus.git
