@@ -181,3 +181,6 @@
 [submodule "bundle/vimtex"]
 	path = bundle/vimtex
 	url = https://github.com/lervag/vimtex
+[submodule "bundle/vim-gnupg"]
+	path = bundle/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg

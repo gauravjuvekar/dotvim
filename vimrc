@@ -134,6 +134,10 @@ hi link DefinedName Macro
 hi link EnumeratorName Type
 hi link EnumerationValue Constant
 hi link GlobalVariable Identifier
+hi link Variable Normal
+hi link LocalVariable Normal
+hi link Member Variable
+
 
 
 " Change some filetype for better syntax support
