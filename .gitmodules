@@ -187,3 +187,6 @@
 [submodule "bundle/gutentags_plus"]
 	path = bundle/gutentags_plus
 	url = https://github.com/skywind3000/gutentags_plus.git
+[submodule "bundle/vim-table-mode"]
+	path = bundle/vim-table-mode
+	url = https://github.com/dhruvasagar/vim-table-mode.git

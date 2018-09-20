@@ -162,7 +162,7 @@ hi link doxygenSpecialOneLineDesc doxygenBody
 " Force update types files (for syntax coloring)
 augroup UpdateTypesFiles
 	autocmd!
-	autocmd BufWritePost *.h,*.c :UpdateTypesFile
+	autocmd BufWritePost *.h,*.c,*.cpp :UpdateTypesFile
 augroup END
 
 
@@ -338,3 +338,5 @@ noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
 " clang-format
 map <c-k> :py3f /usr/share/clang/clang-format.py<cr>
 imap <c-k> <c-o>:py3f /usr/share/clang/clang-format.py<cr>
+
+nnoremap ; :
