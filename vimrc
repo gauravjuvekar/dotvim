@@ -340,3 +340,9 @@ map <c-k> :py3f /usr/share/clang/clang-format.py<cr>
 imap <c-k> <c-o>:py3f /usr/share/clang/clang-format.py<cr>
 
 nnoremap ; :
+
+set title titlestring=
+
+" Remove the annoying bell
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=

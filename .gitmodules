@@ -190,3 +190,9 @@
 [submodule "bundle/vim-table-mode"]
 	path = bundle/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
+[submodule "bundle/vim-windowswap"]
+	path = bundle/vim-windowswap
+	url = https://github.com/wesQ3/vim-windowswap.git
+[submodule "bundle/vim-autoswap"]
+	path = bundle/vim-autoswap
+	url = https://github.com/gioele/vim-autoswap.git
