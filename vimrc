@@ -239,7 +239,7 @@ let g:airline_powerline_fonts = 1
 let g:ycm_register_as_syntastic_checker            = 1
 let g:Show_diagnostics_ui                          = 1
 let g:ycm_enable_diagnostic_signs                  = 1
-let g:ycm_enable_diagnostic_highlighting           = 0
+let g:ycm_enable_diagnostic_highlighting           = 1
 let g:ycm_always_populate_location_list            = 1 "default 0
 let g:ycm_open_loclist_on_ycm_diags                = 1 "default 1
 let g:ycm_global_ycm_extra_conf                    = '~/.vim/ycm_extra_conf.py'
@@ -321,7 +321,7 @@ let g:gutentags_modules = ['ctags', 'gtags_cscope']
 let g:gutentags_project_root = ['.root']
 let g:gutentags_ctags_extra_args = ['--fields=+l']
 let g:gutentags_cache_dir = expand('~/.cache/vim/tags')
-let g:gutentags_auto_add_gtags_cscope = 0
+let g:gutentags_auto_add_gtags_cscope = 1
 let g:gutentags_plus_nomap = 1
 
 noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
