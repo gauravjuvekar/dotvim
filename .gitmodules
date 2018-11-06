@@ -196,3 +196,6 @@
 [submodule "bundle/vim-autoswap"]
 	path = bundle/vim-autoswap
 	url = https://github.com/gioele/vim-autoswap.git
+[submodule "bundle/vim-llvm"]
+	path = bundle/vim-llvm
+	url = https://github.com/rhysd/vim-llvm
