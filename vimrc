@@ -136,7 +136,10 @@ hi link EnumerationValue Constant
 hi link GlobalVariable Identifier
 hi link Variable Normal
 hi link LocalVariable Normal
-hi link Member Variable
+augroup CFileHighlights
+    autocmd!
+    autocmd Filetype c hi link Member Variable
+augroup END
 
 
 
@@ -346,3 +349,10 @@ set title titlestring=
 " Remove the annoying bell
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
+
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_concepts_highlight = 1
+

@@ -199,3 +199,6 @@
 [submodule "bundle/vim-llvm"]
 	path = bundle/vim-llvm
 	url = https://github.com/rhysd/vim-llvm
+[submodule "bundle/vim-cpp-enhanced-highlight"]
+	path = bundle/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight
