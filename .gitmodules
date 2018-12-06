@@ -202,3 +202,9 @@
 [submodule "bundle/vim-cpp-enhanced-highlight"]
 	path = bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight
+[submodule "bundle/vim-hilinktrace"]
+	path = bundle/vim-hilinktrace
+	url = https://github.com/gerw/vim-hilinktrace
+[submodule "bundle/semantic-highlight.vim"]
+	path = bundle/semantic-highlight.vim
+	url = https://github.com/jaxbot/semantic-highlight.vim.git
