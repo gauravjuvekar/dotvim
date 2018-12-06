@@ -140,6 +140,10 @@ augroup CFileHighlights
     autocmd!
     autocmd Filetype c hi link Member Variable
 augroup END
+augroup CXXFileHighlights
+    autocmd!
+    autocmd Filetype cpp set matchpairs+=<:>
+augroup END
 
 
 
