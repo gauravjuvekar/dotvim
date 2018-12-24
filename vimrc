@@ -142,7 +142,11 @@ augroup CFileHighlights
 augroup END
 augroup CXXFileHighlights
     autocmd!
-    autocmd Filetype cpp set matchpairs+=<:>
+    autocmd Filetype cpp setlocal matchpairs+=<:>
+augroup END
+augroup YamlFiles
+    autocmd!
+    autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 augroup END
 
 
