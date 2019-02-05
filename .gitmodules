@@ -89,7 +89,7 @@
 	path = terminal/gnome-terminal-colors-solarized
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 [submodule "bundle/gtk-vim-syntax"]
-	path = bundle/gtk-vim-syntax
+	path = disabled_plugins/gtk-vim-syntax
 	url = https://github.com/vim-scripts/gtk-vim-syntax.git
 [submodule "bundle/scons.vim"]
 	path = bundle/scons.vim
