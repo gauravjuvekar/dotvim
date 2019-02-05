@@ -274,6 +274,8 @@ nnoremap <F7> :ptag<CR>
 
 
 let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
 
 
 let g:UltiSnipsUsePythonVersion = 3
@@ -364,3 +366,6 @@ let g:cpp_class_decl_highlight = 1
 let g:cpp_experimental_simple_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 
+
+let g:cmake_export_compile_commands = 1
+let g:cmake_ycm_symlinks = 1
