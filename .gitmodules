@@ -214,3 +214,6 @@
 [submodule "bundle/vim-cmake"]
 	path = bundle/vim-cmake
 	url = git://github.com/vhdirk/vim-cmake.git
+[submodule "bundle/syntax/vim-cpp-enhanced-highlight"]
+	path = bundle/syntax/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
