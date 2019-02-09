@@ -56,6 +56,9 @@ set backspace=indent,eol,start
 set cindent
 set cino+=(0,W1s,u0,U0,:0,g0.5s,h0.5s,N-s
 
+"Ignore case while searching
+set ignorecase
+
 "Dont automatically change to project roo
 let g:rooter_manual_only = 1
 set autochdir
