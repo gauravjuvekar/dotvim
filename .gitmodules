@@ -223,3 +223,9 @@
 [submodule "bundle/splitjoin.vim"]
 	path = bundle/splitjoin.vim
 	url = https://github.com/andrewradev/splitjoin.vim
+[submodule "bundle/Conque-GDB"]
+	path = bundle/Conque-GDB
+	url = https://github.com/vim-scripts/Conque-GDB
+[submodule "bundle/vim-buffergator"]
+	path = bundle/vim-buffergator
+	url = https://github.com/jeetsukumaran/vim-buffergator
