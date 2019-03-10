@@ -1,7 +1,6 @@
 " Pathogen
 let g:pathogen_disabled = ['gtk-vim-syntax', 'supertab']
 
-
 syntax on
 filetype plugin indent on
 call pathogen#infect()
@@ -139,18 +138,6 @@ hi link EnumerationValue Constant
 hi link GlobalVariable Identifier
 hi link Variable Normal
 hi link LocalVariable Normal
-augroup CFileHighlights
-    autocmd!
-    autocmd Filetype c hi link Member Variable
-augroup END
-augroup CXXFileHighlights
-    autocmd!
-    autocmd Filetype cpp setlocal matchpairs+=<:>
-augroup END
-augroup YamlFiles
-    autocmd!
-    autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-augroup END
 
 
 
@@ -169,9 +156,6 @@ let g:load_doxygen_syntax = 1
 " augroup END
 hi link doxygenBrief doxygenBody
 hi link doxygenSpecialOneLineDesc doxygenBody
-
-
-
 
 " Force update types files (for syntax coloring)
 augroup UpdateTypesFiles
