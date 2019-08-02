@@ -339,6 +339,11 @@ noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
 map <c-k> :py3f /usr/share/clang/clang-format.py<cr>
 imap <c-k> <c-o>:py3f /usr/share/clang/clang-format.py<cr>
 
+" clang-rename
+" let g:clang_rename_path = "/usr/share/clang/clang-rename.py"
+" noremap <leader>r :py3f /usr/share/clang/clang-rename.py<cr>
+
+
 nnoremap ; :
 
 set title titlestring=
