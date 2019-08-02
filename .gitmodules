@@ -229,3 +229,6 @@
 [submodule "bundle/vim-buffergator"]
 	path = bundle/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator
+[submodule "bundle/vim-perforce"]
+	path = bundle/vim-perforce
+	url = https://github.com/nfvs/vim-perforce.git
