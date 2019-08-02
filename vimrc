@@ -60,6 +60,7 @@ set ignorecase
 
 "Dont automatically change to project roo
 let g:rooter_manual_only = 1
+let g:rooter_patterns = ['Rakefile', '.git/', '.root']
 set autochdir
 
 
@@ -145,6 +146,7 @@ hi link LocalVariable Normal
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.mk set filetype=make
 autocmd BufNewFile,BufRead SCon* set filetype=scons
 
 
@@ -195,6 +197,9 @@ cnoreabbrev S Subvert
 
 " For alignments (like on = signs)
 vmap <Enter> <Plug>(EasyAlign)
+let g:easy_align_delimiters = {
+            \ '\': {'pattern': '\\$', },
+            \ }
 
 
 " Git gutter config
@@ -276,6 +281,7 @@ nnoremap <leader>ue :UltiSnipsEdit<cr>
 " CtrlP stuff
 let g:ctrlp_extensions = ['undo', 'changes', 'tag', 'buffertag', 'mixed']
 let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_root_markers = ['.root', '.gitignore', '.git/', '.p4ignore']
 nnoremap <c-i> :CtrlPTag<CR>
 " Now use C-u for going forward in the jumplist
 nnoremap <C-u> <C-i>
@@ -317,12 +323,15 @@ let g:hugefile_trigger_size = 256 "MB
 let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
 
+let g:gutentags_trace = 0
 let g:gutentags_modules = ['ctags', 'gtags_cscope']
 let g:gutentags_project_root = ['.root']
 let g:gutentags_ctags_extra_args = ['--fields=+l']
 let g:gutentags_cache_dir = expand('~/.cache/vim/tags')
+let g:gutentags_define_advanced_commands = 1
 let g:gutentags_auto_add_gtags_cscope = 1
 let g:gutentags_plus_nomap = 1
+let g:gutentags_plus_switch = 1
 
 noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
 noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
