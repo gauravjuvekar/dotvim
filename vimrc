@@ -252,7 +252,8 @@ let g:ycm_use_ultisnips_completer                  = 1 " Default 1, just ensure
 let g:ycm_seed_identifiers_with_syntax             = 1 " Completion for programming language's keyword
 let g:ycm_complete_in_comments                     = 1 " Completion in comments
 let g:ycm_complete_in_strings                      = 1 " Completion in string
-let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 0
 " let g:ycm_key_list_select_completion = ['<tab>', '<C-j>', '<Down>', '<C-n>']
 " let g:ycm_key_list_previous_completion = ['<s-tab>', '<C-k>', '<Up>', '<C-p>']
 let g:ycm_python_binary_path = '/usr/bin/python3'
@@ -347,12 +348,16 @@ noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
 " clang-format
 map <c-k> :py3f /usr/share/clang/clang-format.py<cr>
 imap <c-k> <c-o>:py3f /usr/share/clang/clang-format.py<cr>
+" or YAPF
+autocmd Filetype python map <buffer> <c-k> :YAPF<cr>
+autocmd Filetype python imap <buffer> <c-k> <c-o>:YAPF<cr>
+
 
 " clang-rename
 " let g:clang_rename_path = "/usr/share/clang/clang-rename.py"
 " noremap <leader>r :py3f /usr/share/clang/clang-rename.py<cr>
 
-
+" Because we are too lazy to hit shift.
 nnoremap ; :
 
 set title titlestring=

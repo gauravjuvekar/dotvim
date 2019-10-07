@@ -235,3 +235,6 @@
 [submodule "bundle/vim-matchup"]
 	path = bundle/vim-matchup
 	url = https://github.com/andymass/vim-matchup.git
+[submodule "bundle_out_of_tree/yapf"]
+	path = bundle_out_of_tree/yapf
+	url = https://github.com/google/yapf
