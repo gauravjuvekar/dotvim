@@ -271,7 +271,7 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 
 
-let g:UltiSnipsUsePythonVersion = 3
+" let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsSnippetDirectories = ["UltiSnips"]
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsExpandTrigger = "<c-l>"
