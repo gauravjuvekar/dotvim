@@ -1,5 +1,6 @@
 " Pathogen
 let g:pathogen_disabled = ['gtk-vim-syntax', 'supertab']
+py3 1 + 1
 
 syntax on
 filetype plugin indent on
@@ -323,6 +324,7 @@ let g:hugefile_trigger_size = 256 "MB
 
 let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
+let g:localvimrc_sandbox=1
 
 let g:gutentags_trace = 0
 let g:gutentags_modules = ['ctags', 'gtags_cscope']
