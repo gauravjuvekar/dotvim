@@ -202,9 +202,6 @@
 [submodule "bundle/vim-hilinktrace"]
 	path = bundle/vim-hilinktrace
 	url = https://github.com/gerw/vim-hilinktrace
-[submodule "bundle/semantic-highlight.vim"]
-	path = bundle/semantic-highlight.vim
-	url = https://github.com/jaxbot/semantic-highlight.vim.git
 [submodule "bundle/YCM-Generator"]
 	path = bundle/YCM-Generator
 	url = https://github.com/rdnetto/YCM-Generator.git
