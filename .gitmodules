@@ -235,3 +235,6 @@
 [submodule "bundle_out_of_tree/yapf"]
 	path = bundle_out_of_tree/yapf
 	url = https://github.com/google/yapf
+[submodule "bundle/semantic-highlight.vim"]
+	path = bundle/semantic-highlight.vim
+	url = https://github.com/00sapo/semantic-highlight.vim
