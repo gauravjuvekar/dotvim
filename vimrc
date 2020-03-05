@@ -5,6 +5,9 @@ syntax on
 filetype plugin indent on
 call pathogen#infect()
 
+" Easier command
+nnoremap ; :
+vnoremap ; :
 
 " Line numbering
 set number
