@@ -26,7 +26,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set textwidth=79
-set colorcolumn=80
+set colorcolumn=80,100,120
+
+au VimEnter * if &diff | execute 'windo set wrap' | endif
 
 " Code folding
 set foldmethod=syntax
