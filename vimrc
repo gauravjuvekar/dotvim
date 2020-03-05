@@ -284,7 +284,8 @@ nnoremap <leader>ue :UltiSnipsEdit<cr>
 " CtrlP stuff
 let g:ctrlp_extensions = ['undo', 'changes', 'tag', 'buffertag', 'mixed']
 let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_root_markers = ['.root', '.gitignore', '.git/', '.p4ignore']
+" let g:ctrlp_root_markers = ['.root', '.gitignore', '.git/', '.p4ignore']
+let g:ctrlp_root_markers = ['.root', '.git/', '.p4ignore']
 nnoremap <c-i> :CtrlPTag<CR>
 " Now use C-u for going forward in the jumplist
 nnoremap <C-u> <C-i>
@@ -328,7 +329,8 @@ let g:localvimrc_persistent = 2
 let g:localvimrc_sandbox=1
 
 let g:gutentags_trace = 0
-let g:gutentags_modules = ['ctags', 'gtags_cscope']
+" let g:gutentags_modules = ['ctags', 'gtags_cscope']
+let g:gutentags_modules = ['gtags_cscope']
 let g:gutentags_project_root = ['.root']
 let g:gutentags_ctags_extra_args = ['--fields=+l']
 let g:gutentags_cache_dir = expand('~/.cache/vim/tags')
