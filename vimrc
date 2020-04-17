@@ -1,6 +1,8 @@
 " Pathogen
 let g:pathogen_disabled = ['gtk-vim-syntax', 'supertab']
 
+:py3 1+1
+
 syntax on
 filetype plugin indent on
 call pathogen#infect()
