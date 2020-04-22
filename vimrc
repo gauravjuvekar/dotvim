@@ -30,7 +30,7 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set textwidth=79
+set textwidth=80
 set colorcolumn=80,100,120
 
 au VimEnter * if &diff | execute 'windo set wrap' | endif
