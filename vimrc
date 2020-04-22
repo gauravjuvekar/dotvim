@@ -126,7 +126,8 @@ set clipboard=unnamedplus
 " delete or visual paste without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
-vnoremap <leader>p "_dP
+vnoremap p "_dP
+vnoremap <leader>p p
 
 " Make shift tab work
 exe 'set t_kB=' . nr2char(27) . '[Z'
