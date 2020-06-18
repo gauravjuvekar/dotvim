@@ -386,3 +386,7 @@ let g:cpp_concepts_highlight = 1
 
 let g:cmake_export_compile_commands = 1
 let g:cmake_ycm_symlinks = 1
+
+if executable('ag')
+    let g:ackprg='ag --vimgrep'
+endif
