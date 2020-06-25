@@ -390,3 +390,5 @@ let g:cmake_ycm_symlinks = 1
 if executable('ag')
     let g:ackprg='ag --vimgrep'
 endif
+
+let g:indent_guides_auto_colors=1
