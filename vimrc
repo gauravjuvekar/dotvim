@@ -363,7 +363,6 @@ imap <c-k> <c-o>:py3f /usr/share/clang/clang-format.py<cr>
 autocmd Filetype python map <buffer> <c-k> :YAPF<cr>
 autocmd Filetype python imap <buffer> <c-k> <c-o>:YAPF<cr>
 
-
 " clang-rename
 " let g:clang_rename_path = "/usr/share/clang/clang-rename.py"
 " noremap <leader>r :py3f /usr/share/clang/clang-rename.py<cr>
@@ -392,3 +391,5 @@ if executable('ag')
 endif
 
 let g:indent_guides_auto_colors=1
+
+let g:tex_flavor='latex'
