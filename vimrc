@@ -156,6 +156,8 @@ autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.mk set filetype=make
 autocmd BufNewFile,BufRead SCon* set filetype=scons
+autocmd BufNewFile,BufRead *.finn set filetype=c.doxygen
+
 
 
 " Set sub-highlight to doxygen syntax for c sources and headers
