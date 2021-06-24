@@ -241,3 +241,6 @@
 [submodule "bundle/vim-alias"]
 	path = bundle/vim-alias
 	url = https://github.com/konfekt/vim-alias.git
+[submodule "vim-perforce"]
+	path = bundle/vim-perforce
+	url = https://github.com/idbrii/vim-perforce.git
