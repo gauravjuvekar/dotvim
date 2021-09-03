@@ -1,13 +1,15 @@
-" Pathogen
-let g:pathogen_disabled = ['gtk-vim-syntax', 'supertab']
-
-:py3 1+1
+if has('python3')
+    " Force loading python3 so that python2 isn't used depending on plugin load
+    " order. The 'has('python3')' check itself will force load python3, no need
+    " for the below 1 + 1
+    "
+    " py3 1 + 1
+endif
 
 syntax on
 filetype plugin indent on
-call pathogen#infect()
 
-" Easier command
+" Because we are too lazy to hit shift.
 nnoremap ; :
 vnoremap ; :
 
@@ -15,13 +17,11 @@ vnoremap ; :
 set number
 set relativenumber
 
-
 " Search highlighting
 set showmatch
 set incsearch
 " Keymap to toggle highlight
 nnoremap <F4> :set hlsearch!<CR>
-
 
 " Alignments and indents
 set autoindent
@@ -303,24 +303,6 @@ let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_quickfix = 2
 
 
-" Use \w, etc to go to the next camel word
-call camelcasemotion#CreateMotionMappings('<leader>')
-
-
-" Configure submodes so as to not press ctrl + W for every split adjustment
-call submode#enter_with('window', 'n', '', '<C-w>')
-call submode#leave_with('window', 'n', '', '<ESC>')
-for key in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-		\   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-	call submode#map('window', 'n', '', key, '<C-w>' . key)
-	call submode#map('window', 'n', '', toupper(key), '<C-w>' . toupper(key))
-	call submode#map('window', 'n', '', '<C-' . key . '>', '<C-w>' . '<C-' . key . '>')
-	call submode#map('window', 'n', '', '<C-' . toupper(key) . '>', '<C-w>' . '<C-' . toupper(key) . '>')
-endfor
-for key in ['=', '_', '+', '-', '<', '>', '{', '}', '[', ']']
-	call submode#map('window', 'n', '', key, '<C-w>' . key)
-endfor
-
 
 " Autoinsert current time with tnow
 iab tnow <c-r>=strftime("%FT%T%z")<cr>
@@ -369,9 +351,6 @@ autocmd Filetype python imap <buffer> <c-k> <c-o>:YAPF<cr>
 " let g:clang_rename_path = "/usr/share/clang/clang-rename.py"
 " noremap <leader>r :py3f /usr/share/clang/clang-rename.py<cr>
 
-" Because we are too lazy to hit shift.
-nnoremap ; :
-
 set title titlestring=
 
 " Remove the annoying bell
@@ -395,3 +374,28 @@ endif
 let g:indent_guides_auto_colors=1
 
 let g:tex_flavor='latex'
+
+
+" Load all packages, so that we can use their defined functions in the rest of
+" the config below.
+packloadall
+
+
+" Use \w, etc to go to the next camel word
+call camelcasemotion#CreateMotionMappings('<leader>')
+
+
+" Configure submodes so as to not press ctrl + W for every split adjustment
+call submode#enter_with('window', 'n', '', '<C-w>')
+call submode#leave_with('window', 'n', '', '<ESC>')
+for key in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+		\   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+	call submode#map('window', 'n', '', key, '<C-w>' . key)
+	call submode#map('window', 'n', '', toupper(key), '<C-w>' . toupper(key))
+	call submode#map('window', 'n', '', '<C-' . key . '>', '<C-w>' . '<C-' . key . '>')
+	call submode#map('window', 'n', '', '<C-' . toupper(key) . '>', '<C-w>' . '<C-' . toupper(key) . '>')
+endfor
+for key in ['=', '_', '+', '-', '<', '>', '{', '}', '[', ']']
+	call submode#map('window', 'n', '', key, '<C-w>' . key)
+endfor
+
