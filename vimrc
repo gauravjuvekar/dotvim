@@ -375,6 +375,8 @@ let g:indent_guides_auto_colors=1
 
 let g:tex_flavor='latex'
 
+" Don't use non-ASCII7 symbols for puml previews
+let g:slumlord_asciiart_utf=0
 
 " Load all packages, so that we can use their defined functions in the rest of
 " the config below.
