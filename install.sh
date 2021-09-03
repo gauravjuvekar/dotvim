@@ -7,8 +7,8 @@ SRC="$SCRIPT_DIRECTORY"
 : ${XDG_CONFIG_HOME=$HOME/.config}
 
 function installf {
-    SRC="$1"
-    DST="$2"
+    local SRC="$1"
+    local DST="$2"
 
     mkdir -vp "$(dirname "$DST")"
     ln -vfs "$SRC" "$DST"
