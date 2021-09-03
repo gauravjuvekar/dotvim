@@ -134,11 +134,13 @@ exe 'set t_kB=' . nr2char(27) . '[Z'
 " Set it to up so YCM can use it
 imap <s-tab> <up>
 
-
-set t_Co=256
-set background=light
-colorscheme solarized
-
+" Don't change colors unless we are on a 256 color terminal. This will prevent
+" messed up settings on virtual terminals
+if &term == "xterm-256color"
+    set t_Co=256
+    set background=light
+    colorscheme solarized
+endif
 
 " Use these colors instead of the defaults
 hi link DefinedName Macro
@@ -149,7 +151,6 @@ hi link Variable Normal
 hi link LocalVariable Normal
 
 
-
 " Change some filetype for better syntax support
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
@@ -157,7 +158,6 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.mk set filetype=make
 autocmd BufNewFile,BufRead SCon* set filetype=scons
 autocmd BufNewFile,BufRead *.finn set filetype=c.doxygen
-
 
 
 " Set sub-highlight to doxygen syntax for c sources and headers
