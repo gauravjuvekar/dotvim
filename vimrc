@@ -136,7 +136,7 @@ imap <s-tab> <up>
 
 " Don't change colors unless we are on a 256 color terminal. This will prevent
 " messed up settings on virtual terminals
-if &term == "xterm-256color"
+if &term == "xterm-256color" || has("gui_running")
     set t_Co=256
     set background=light
     colorscheme solarized
