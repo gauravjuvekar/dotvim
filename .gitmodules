@@ -330,3 +330,7 @@
 	path = pack/bundles/start/genutils
 	url = https://github.com/vim-scripts/genutils.git
 	ignore = untracked
+[submodule "pack/bundles/start/file-line"]
+	path = pack/bundles/start/file-line
+	url = https://github.com/lervag/file-line.git
+	ignore = untracked
