@@ -302,7 +302,8 @@ nnoremap <C-u> <C-i>
 let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_quickfix = 2
 
-
+" Don't flash cursor when opening file:line[:col]
+let g:file_line_crosshairs=0
 
 " Autoinsert current time with tnow
 iab tnow <c-r>=strftime("%FT%T%z")<cr>
