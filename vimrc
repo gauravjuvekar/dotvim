@@ -281,7 +281,7 @@ nnoremap <F6> :pclose<CR>:lclose<CR>
 nnoremap <F7> :ptag<CR>
 nmap <S-k> <Plug>(YCMHover)
 nnoremap <leader>gd :YcmCompleter GoTo<CR>
-nnoremap <leader>gD :YcmCompleter GotoDeclaration<CR>
+nnoremap <leader>gD :YcmCompleter GoToDeclaration<CR>
 
 
 let g:NERDSpaceDelims = 1
