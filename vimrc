@@ -6,6 +6,8 @@ if has('python3')
     " py3 1 + 1
 endif
 
+colorscheme solarized8_light
+
 syntax on
 filetype plugin indent on
 
@@ -266,14 +268,20 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 0
 " let g:ycm_key_list_select_completion = ['<tab>', '<C-j>', '<Down>', '<C-n>']
 " let g:ycm_key_list_previous_completion = ['<s-tab>', '<C-k>', '<Up>', '<C-p>']
-let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:ycm_python_binary_path = exepath("python3")
+let g:ycm_clangd_binary_path = exepath("clangd")
+let g:ycm_clangd_uses_ycmd_caching = 0
+let g:ycm_auto_hover = ''
 
 nnoremap <F2> :YcmCompleter FixIt<CR>
 nnoremap <F3> :YcmCompleter GetDoc<CR>
 nnoremap <F5> :YcmDiags<CR>
 " Close the preview window or tags list. Use :ccl for the tags list also
-nnoremap <F6> :pclose<CR>
+nnoremap <F6> :pclose<CR>:lclose<CR>
 nnoremap <F7> :ptag<CR>
+nmap <S-k> <Plug>(YCMHover)
+nnoremap <leader>gd :YcmCompleter GoTo<CR>
+nnoremap <leader>gD :YcmCompleter GotoDeclaration<CR>
 
 
 let g:NERDSpaceDelims = 1
@@ -288,6 +296,7 @@ let g:UltiSnipsExpandTrigger = "<c-l>"
 let g:UltiSnipsJumpForwardTrigger = "<c-l>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
 nnoremap <leader>ue :UltiSnipsEdit<cr>
+
 
 " CtrlP stuff
 let g:ctrlp_extensions = ['undo', 'changes', 'tag', 'buffertag', 'mixed']
@@ -319,6 +328,8 @@ let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
 let g:localvimrc_sandbox=1
 
+" Disable in favor of YCM + clangd LSP
+let g:gutentags_enabled = 0
 let g:gutentags_trace = 0
 " let g:gutentags_modules = ['ctags', 'gtags_cscope']
 let g:gutentags_modules = ['gtags_cscope']
@@ -330,15 +341,15 @@ let g:gutentags_auto_add_gtags_cscope = 1
 let g:gutentags_plus_nomap = 1
 let g:gutentags_plus_switch = 1
 
-noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
-noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
-noremap <silent> <leader>gc :GscopeFind c <C-R><C-W><cr>
-noremap <silent> <leader>gt :GscopeFind t <C-R><C-W><cr>
-noremap <silent> <leader>ge :GscopeFind e <C-R><C-W><cr>
-noremap <silent> <leader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
-noremap <silent> <leader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
-noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
-noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
+" noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
+" noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
+" noremap <silent> <leader>gc :GscopeFind c <C-R><C-W><cr>
+" noremap <silent> <leader>gt :GscopeFind t <C-R><C-W><cr>
+" noremap <silent> <leader>ge :GscopeFind e <C-R><C-W><cr>
+" noremap <silent> <leader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
+" noremap <silent> <leader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
+" noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
+" noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
 
 
 " clang-format
