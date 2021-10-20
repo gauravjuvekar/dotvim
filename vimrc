@@ -6,7 +6,12 @@ if has('python3')
     " py3 1 + 1
 endif
 
-colorscheme solarized8_light
+let g:deluminator#themes = {
+			\ "light": "solarized8_light",
+			\ "dark": "solarized8_dark"}
+
+" Set colorscheme with deluminator
+execute deluminator#start()
 
 syntax on
 filetype plugin indent on
