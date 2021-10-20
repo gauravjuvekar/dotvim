@@ -10,8 +10,12 @@ let g:deluminator#themes = {
 			\ "light": "solarized8_light",
 			\ "dark": "solarized8_dark"}
 
-" Set colorscheme with deluminator
-execute deluminator#start()
+" Don't change colors unless we are on a 256 color terminal. This will prevent
+" messed up settings on virtual terminals
+if &term == "xterm-256color" || has("gui_running")
+	" Set colorscheme with deluminator
+	execute deluminator#start()
+endif
 
 syntax on
 filetype plugin indent on
@@ -140,14 +144,6 @@ vnoremap <leader>p p
 exe 'set t_kB=' . nr2char(27) . '[Z'
 " Set it to up so YCM can use it
 imap <s-tab> <up>
-
-" Don't change colors unless we are on a 256 color terminal. This will prevent
-" messed up settings on virtual terminals
-if &term == "xterm-256color" || has("gui_running")
-    set t_Co=256
-    set background=light
-    colorscheme solarized
-endif
 
 " Use these colors instead of the defaults
 hi link DefinedName Macro
