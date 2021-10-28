@@ -414,3 +414,7 @@ for key in ['=', '_', '+', '-', '<', '>', '{', '}', '[', ']']
 	call submode#map('window', 'n', '', key, '<C-w>' . key)
 endfor
 
+" 3 way merge commands
+nnoremap ml :diffget LOCAL
+nnoremap mb :diffget BASE
+nnoremap mr :diffget REMOTE
