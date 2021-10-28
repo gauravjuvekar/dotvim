@@ -415,6 +415,6 @@ for key in ['=', '_', '+', '-', '<', '>', '{', '}', '[', ']']
 endfor
 
 " 3 way merge commands
-nnoremap ml :diffget LOCAL
-nnoremap mb :diffget BASE
-nnoremap mr :diffget REMOTE
+nnoremap ml :diffget LOCAL<cr>
+nnoremap mb :diffget BASE<cr>
+nnoremap mr :diffget REMOTE<cr>
