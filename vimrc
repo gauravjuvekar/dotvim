@@ -271,7 +271,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 0
 " let g:ycm_key_list_previous_completion = ['<s-tab>', '<C-k>', '<Up>', '<C-p>']
 let g:ycm_python_binary_path = exepath("python3")
 let g:ycm_clangd_binary_path = exepath("clangd")
-let g:ycm_clangd_uses_ycmd_caching = 0
+let g:ycm_clangd_uses_ycmd_caching = 1
 let g:ycm_auto_hover = ''
 
 nnoremap <F2> :YcmCompleter FixIt<CR>
