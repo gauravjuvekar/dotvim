@@ -1,3 +1,4 @@
-:setlocal expandtab
-:setlocal textwidth=80
-:setlocal colorcolumn=80
+setlocal expandtab
+setlocal textwidth=80
+setlocal colorcolumn=80
+
