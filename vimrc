@@ -192,13 +192,6 @@ augroup HiglightTODO
 				\                        call matchadd('Todo', 'todo', -1)
 augroup END
 
-" vim-pencil
-augroup pencil
-	autocmd!
-	autocmd Filetype markdown,mkd,text,mail call pencil#init({'wrap': 'soft'})
-augroup END
-
-
 " spellcheck
 augroup spellcheck
 	autocmd!
