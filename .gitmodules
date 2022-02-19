@@ -334,3 +334,6 @@
 	path = pack/bundles/start/file-line
 	url = https://github.com/lervag/file-line.git
 	ignore = untracked
+[submodule "pack/bundles/start/cachedir.vim"]
+	path = pack/bundles/start/cachedir.vim
+	url = https://github.com/Neui/cachedir.vim.git

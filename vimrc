@@ -6,6 +6,13 @@ if has('python3')
     " py3 1 + 1
 endif
 
+set viminfo+=n~/.cache/vim/viminfo
+let g:cachedir_config = {
+			\ 'test': {
+				\ 'global': 1
+				\ }
+			\ }
+
 let g:deluminator#themes = {
 			\ "light": "solarized8_light",
 			\ "dark": "solarized8_dark"}
