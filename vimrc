@@ -44,14 +44,14 @@ set incsearch
 nnoremap <F4> :set hlsearch!<CR>
 
 " Alignments and indents
-set autoindent
-set smarttab
-set softtabstop=4
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set textwidth=80
-set colorcolumn=80,100,120
+" set autoindent
+" set smarttab
+" set softtabstop=4
+" set tabstop=4
+" set shiftwidth=4
+" set expandtab
+" set textwidth=80
+" set colorcolumn=80,100,120
 
 au VimEnter * if &diff | execute 'windo set wrap' | endif
 
