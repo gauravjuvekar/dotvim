@@ -310,10 +310,6 @@
 	path = bundle_out_of_tree/yapf
 	url = https://github.com/google/yapf
 	ignore = untracked
-[submodule "bundle/semantic-highlight.vim"]
-	path = pack/bundles/start/semantic-highlight.vim
-	url = https://github.com/00sapo/semantic-highlight.vim
-	ignore = untracked
 [submodule "bundle/vim-polyglot"]
 	path = pack/bundles/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
@@ -337,3 +333,8 @@
 [submodule "pack/bundles/start/cachedir.vim"]
 	path = pack/bundles/start/cachedir.vim
 	url = https://github.com/Neui/cachedir.vim.git
+[submodule "semantic-highlight.vim"]
+	url = https://github.com/jaxbot/semantic-highlight.vim.git
+[submodule "pack/bundles/start/semantic-highlight.vim"]
+	path = pack/bundles/start/semantic-highlight.vim
+	url = https://github.com/jaxbot/semantic-highlight.vim.git
