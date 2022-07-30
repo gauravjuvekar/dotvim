@@ -274,10 +274,6 @@
 	path = pack/bundles/start/YCM-Generator
 	url = https://github.com/rdnetto/YCM-Generator.git
 	ignore = untracked
-[submodule "bundle/vim-cmake"]
-	path = pack/bundles/start/vim-cmake
-	url = git://github.com/vhdirk/vim-cmake.git
-	ignore = untracked
 [submodule "bundle/syntax/vim-cpp-enhanced-highlight"]
 	path = pack/bundles/start/syntax/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
