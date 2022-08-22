@@ -334,3 +334,6 @@
 [submodule "pack/bundles/start/semantic-highlight.vim"]
 	path = pack/bundles/start/semantic-highlight.vim
 	url = https://github.com/jaxbot/semantic-highlight.vim.git
+[submodule "pack/bundles/start/vim-isort"]
+	path = pack/bundles/start/vim-isort
+	url = https://github.com/fisadev/vim-isort
