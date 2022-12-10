@@ -337,3 +337,6 @@
 [submodule "pack/bundles/start/vim-isort"]
 	path = pack/bundles/start/vim-isort
 	url = https://github.com/fisadev/vim-isort
+[submodule "pack/bundles/start/ansible-vim"]
+	path = pack/bundles/start/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim
