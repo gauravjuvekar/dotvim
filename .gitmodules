@@ -195,7 +195,7 @@
 	url = https://github.com/aklt/plantuml-syntax.git
 	ignore = untracked
 [submodule "bundle/vim-slumlord"]
-	path = pack/bundles/start/vim-slumlord
+	path = disabled_plugins/vim-slumlord
 	url = https://github.com/scrooloose/vim-slumlord.git
 	ignore = untracked
 [submodule "bundle/unite.vim"]
