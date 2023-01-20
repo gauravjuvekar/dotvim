@@ -340,3 +340,9 @@
 [submodule "pack/bundles/start/ansible-vim"]
 	path = pack/bundles/start/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim
+[submodule "pack/bundles/start/plantuml-previewer.vim"]
+	path = pack/bundles/start/plantuml-previewer.vim
+	url = https://github.com/weirongxu/plantuml-previewer.vim
+[submodule "pack/bundles/start/open-browser.vim"]
+	path = pack/bundles/start/open-browser.vim
+	url = https://github.com/tyru/open-browser.vim.git
