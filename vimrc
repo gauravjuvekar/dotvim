@@ -13,20 +13,20 @@ if !has('nvim')
 endif
 
 let g:cachedir_config = {
-			\ 'test': {
-				\ 'global': 1
-				\ }
-			\ }
+            \ 'test': {
+                \ 'global': 1
+                \ }
+            \ }
 
 let g:deluminator#themes = {
-			\ "light": "solarized8_light",
-			\ "dark": "solarized8_dark"}
+            \ "light": "solarized8_light",
+            \ "dark": "solarized8_dark"}
 
 " Don't change colors unless we are on a 256 color terminal. This will prevent
 " messed up settings on virtual terminals
 if &term == "xterm-256color" || has("gui_running")
-	" Set colorscheme with deluminator
-	execute deluminator#start()
+    " Set colorscheme with deluminator
+    execute deluminator#start()
 endif
 
 syntax on
@@ -120,22 +120,22 @@ autocmd BufWritePre * :call<SID>StripTrailingWhitespaces()
 
 
 let g:secure_modelines_allowed_items = [
-	\ "textwidth",   "tw",
-	\ "softtabstop", "sts",
-	\ "tabstop",     "ts",
-	\ "shiftwidth",  "sw",
-	\ "expandtab",   "et",   "noexpandtab", "noet",
-	\ "colorcolumn",
-	\ "filetype",    "ft",
-	\ "foldmethod",  "fdm",
-	\ "readonly",    "ro",   "noreadonly", "noro",
-	\ "rightleft",   "rl",   "norightleft", "norl",
-	\ "cindent",     "cin",  "nocindent", "nocin",
-	\ "smartindent", "si",   "nosmartindent", "nosi",
-	\ "autoindent",  "ai",   "noautoindent", "noai",
-	\ "spell",
-	\ "spelllang"
-	\ ]
+    \ "textwidth",   "tw",
+    \ "softtabstop", "sts",
+    \ "tabstop",     "ts",
+    \ "shiftwidth",  "sw",
+    \ "expandtab",   "et",   "noexpandtab", "noet",
+    \ "colorcolumn",
+    \ "filetype",    "ft",
+    \ "foldmethod",  "fdm",
+    \ "readonly",    "ro",   "noreadonly", "noro",
+    \ "rightleft",   "rl",   "norightleft", "norl",
+    \ "cindent",     "cin",  "nocindent", "nocin",
+    \ "smartindent", "si",   "nosmartindent", "nosi",
+    \ "autoindent",  "ai",   "noautoindent", "noai",
+    \ "spell",
+    \ "spelllang"
+    \ ]
 
 " Global clip board as +
 " Mouse buffer is *
@@ -174,16 +174,16 @@ autocmd BufNewFile,BufRead *.finn set filetype=c.doxygen
 " Set sub-highlight to doxygen syntax for c sources and headers
 let g:load_doxygen_syntax = 1
 " augroup DoxygenizeCFiles
-	" autocmd!
-	" autocmd BufNewFile,BufRead *.h,*.c set filetype=c
+    " autocmd!
+    " autocmd BufNewFile,BufRead *.h,*.c set filetype=c
 " augroup END
 hi link doxygenBrief doxygenBody
 hi link doxygenSpecialOneLineDesc doxygenBody
 
 " Force update types files (for syntax coloring)
 augroup UpdateTypesFiles
-	autocmd!
-	autocmd BufWritePost *.h,*.c,*.cpp,*.cc,*.hh :UpdateTypesFile
+    autocmd!
+    autocmd BufWritePost *.h,*.c,*.cpp,*.cc,*.hh :UpdateTypesFile
 augroup END
 
 
@@ -191,14 +191,14 @@ augroup END
 augroup HiglightTODO
     autocmd!
     autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TRWTF', -1) |
-				\                        call matchadd('Todo', 'WTF', -1) |
-				\                        call matchadd('Todo', 'todo', -1)
+                \                        call matchadd('Todo', 'WTF', -1) |
+                \                        call matchadd('Todo', 'todo', -1)
 augroup END
 
 " spellcheck
 augroup spellcheck
-	autocmd!
-	autocmd Filetype markdown,mkd,text,mail set spell spelllang=en
+    autocmd!
+    autocmd Filetype markdown,mkd,text,mail set spell spelllang=en
 augroup END
 
 " word count
@@ -235,16 +235,16 @@ let g:syntastic_python_python_exec = '/usr/bin/python3'
 let g:syntastic_python_checkers    = ['flake8', 'pep8']
 let g:syntastic_aggregate_errors   = 1
 let g:syntastic_python_pylint_args = [
-			\ "\--disable=bad-whitespace",
-			\ "\--disable=invalid-name",
-			\ "\--disable=superfluous-parens",
-			\ "\--disable=missing-docstring",
-			\ "\--disable=too-few-public-methods",
-			\ "\--disable=too-many-ancestors",
-			\ "\--disable=bad-continuation",
-			\ "\--disable=no-init",
-			\ "\--dummy-variables-rgx=_.*"
-			\ ]
+            \ "\--disable=bad-whitespace",
+            \ "\--disable=invalid-name",
+            \ "\--disable=superfluous-parens",
+            \ "\--disable=missing-docstring",
+            \ "\--disable=too-few-public-methods",
+            \ "\--disable=too-many-ancestors",
+            \ "\--disable=bad-continuation",
+            \ "\--disable=no-init",
+            \ "\--dummy-variables-rgx=_.*"
+            \ ]
 let g:syntastic_python_flake8_args      = "--disable=W0141,E221,E731"
 let g:syntastic_html_tidy_ignore_errors = [ 'missing <li>' ]
 let g:indent_guides_auto_colors = 0
@@ -405,14 +405,14 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 call submode#enter_with('window', 'n', '', '<C-w>')
 call submode#leave_with('window', 'n', '', '<ESC>')
 for key in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-		\   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-	call submode#map('window', 'n', '', key, '<C-w>' . key)
-	call submode#map('window', 'n', '', toupper(key), '<C-w>' . toupper(key))
-	call submode#map('window', 'n', '', '<C-' . key . '>', '<C-w>' . '<C-' . key . '>')
-	call submode#map('window', 'n', '', '<C-' . toupper(key) . '>', '<C-w>' . '<C-' . toupper(key) . '>')
+        \   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    call submode#map('window', 'n', '', key, '<C-w>' . key)
+    call submode#map('window', 'n', '', toupper(key), '<C-w>' . toupper(key))
+    call submode#map('window', 'n', '', '<C-' . key . '>', '<C-w>' . '<C-' . key . '>')
+    call submode#map('window', 'n', '', '<C-' . toupper(key) . '>', '<C-w>' . '<C-' . toupper(key) . '>')
 endfor
 for key in ['=', '_', '+', '-', '<', '>', '{', '}', '[', ']']
-	call submode#map('window', 'n', '', key, '<C-w>' . key)
+    call submode#map('window', 'n', '', key, '<C-w>' . key)
 endfor
 
 " 3 way merge commands
