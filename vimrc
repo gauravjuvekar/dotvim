@@ -8,7 +8,10 @@ if has('python3')
     " py3 1 + 1
 endif
 
-set viminfo+=n~/.cache/vim/viminfo
+if !has('nvim')
+    set viminfo+=n~/.local/state/vim/viminfo
+endif
+
 let g:cachedir_config = {
 			\ 'test': {
 				\ 'global': 1
