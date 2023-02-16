@@ -21,6 +21,5 @@ installf "$SRC/nvimrc" "$XDG_CONFIG_HOME/nvim/init.vim"
 
 # git submodule update --init --recursive
 
-installf "$SRC/vimrc" "$HOME/.vimrc"
 installf "$SRC/ctags" "$HOME/.ctags"
 installf "$SRC/ycm_extra_conf.py" "$HOME/ycm_extra_conf.py"
