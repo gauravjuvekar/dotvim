@@ -25,7 +25,7 @@ let g:deluminator#themes = {
 
 " Don't change colors unless we are on a 256 color terminal. This will prevent
 " messed up settings on virtual terminals
-if &term == "xterm-256color" || has("gui_running")
+if &term == "xterm-256color" || has("gui_running") || has("nvim")
     " Set colorscheme with deluminator
     execute deluminator#start()
 endif
