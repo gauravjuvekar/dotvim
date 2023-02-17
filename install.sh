@@ -16,8 +16,7 @@ function installf {
     # install -vDT "$SRC" "$DST"
 }
 
-
-installf "$SRC/nvimrc" "$XDG_CONFIG_HOME/nvim/init.vim"
+installf "$SRC" "$XDG_CONFIG_HOME/nvim"
 
 # git submodule update --init --recursive
 
