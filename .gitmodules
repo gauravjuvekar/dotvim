@@ -131,7 +131,7 @@
 	url = https://github.com/craigemery/vim-autotag.git
 	ignore = untracked
 [submodule "bundle/vim-gutentags"]
-	path = pack/bundles/start/vim-gutentags
+	path = disabled_plugins/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags
 	ignore = untracked
 [submodule "bundle/abudden-EasyColour"]
@@ -243,7 +243,7 @@
 	url = https://github.com/jamessan/vim-gnupg
 	ignore = untracked
 [submodule "bundle/gutentags_plus"]
-	path = pack/bundles/start/gutentags_plus
+	path = disabled_plugins/gutentags_plus
 	url = https://github.com/skywind3000/gutentags_plus.git
 	ignore = untracked
 [submodule "bundle/vim-table-mode"]
