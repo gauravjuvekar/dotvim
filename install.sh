@@ -25,3 +25,5 @@ installf "$SRC/ctags" "$HOME/.ctags"
 if [ -f "$HOME/.local/share/deluminator/deluminator.vim" ]; then
     ln -vsr "$HOME/.local/share/deluminator/deluminator.vim" "./autoload/deluminator.vim"
 fi
+
+( cd "./fonts" ; "./install.sh" )
