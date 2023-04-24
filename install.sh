@@ -21,3 +21,7 @@ installf "$SRC" "$XDG_CONFIG_HOME/nvim"
 # git submodule update --init --recursive
 
 installf "$SRC/ctags" "$HOME/.ctags"
+
+if [ -f "$HOME/.local/share/deluminator/deluminator.vim" ]; then
+    ln -vsr "$HOME/.local/share/deluminator/deluminator.vim" "./autoload/deluminator.vim"
+fi
