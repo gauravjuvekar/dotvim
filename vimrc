@@ -339,6 +339,7 @@ let g:localvimrc_persistent = 2
 let g:localvimrc_sandbox=1
 
 "" Disable in favor of YCM + clangd LSP
+let g:GtagsCscope_Quiet = 1
 "let g:gutentags_enabled = 0
 "let g:gutentags_trace = 0
 "" let g:gutentags_modules = ['ctags', 'gtags_cscope']
