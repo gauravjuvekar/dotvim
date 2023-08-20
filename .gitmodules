@@ -316,7 +316,7 @@
 	ignore = untracked
 [submodule "vim-perforce"]
 	path = pack/bundles/start/vim-perforce
-	url = https://github.com/idbrii/vim-perforce.git
+	url = https://github.com/gauravjuvekar/vim-perforce.git
 	ignore = untracked
 [submodule "bundle/genutils"]
 	path = pack/bundles/start/genutils
