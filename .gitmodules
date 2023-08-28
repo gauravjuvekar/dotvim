@@ -24,7 +24,7 @@
 	ignore = untracked
 [submodule "bundle/taglist.vim"]
 	path = pack/bundles/start/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim
+	url = https://github.com/gauravjuvekar/taglist.vim
 	ignore = untracked
 [submodule "bundle/vim-airline"]
 	path = pack/bundles/start/vim-airline
