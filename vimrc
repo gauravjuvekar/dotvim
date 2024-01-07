@@ -32,6 +32,8 @@ if executable('deluminator')
     endif
 endif
 
+lua require('rc_lsp')
+
 syntax on
 filetype plugin indent on
 
