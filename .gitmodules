@@ -346,3 +346,6 @@
 [submodule "pack/bundles/start/open-browser.vim"]
 	path = pack/bundles/start/open-browser.vim
 	url = https://github.com/tyru/open-browser.vim.git
+[submodule "pack/bundles/start/nvim-lspconfig"]
+	path = pack/bundles/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
