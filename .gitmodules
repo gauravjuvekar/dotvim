@@ -179,7 +179,7 @@
 	url = https://github.com/airblade/vim-rooter
 	ignore = untracked
 [submodule "bundle/tagbar"]
-	path = pack/bundles/start/tagbar
+	path = disabled_plugins/tagbar
 	url = https://github.com/majutsushi/tagbar
 	ignore = untracked
 [submodule "bundle/vim-localvimrc"]
