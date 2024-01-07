@@ -4,22 +4,35 @@ lspconfig.pyright.setup {}
 lspconfig.rust_analyzer.setup {}
 
 vim.g.coq_settings = {
-	auto_start = 'shut-up'
+  auto_start = 'shut-up'
 }
 
 local servers = {
-	'bashls',
-	'clangd',
-	'lua_ls',
-	'nixd',
-	'perlnavigator',
-	'phpactor',
-	'pyright',
-	'rust_analyzer',
-	'vimls',
-	'yamlls',
+  ['bashls'] = {},
+  ['clangd'] = {},
+  ['lua_ls'] = {
+    settings = {
+      Lua = {
+        diagnostics = {
+          globals = {
+            "vim"
+          }
+        }
+      }
+    }
+  },
+  ['nixd'] = {},
+  ['perlnavigator'] = {},
+  ['phpactor'] = {},
+  ['pyright'] = {},
+  ['rust_analyzer'] = {},
+  ['vimls'] = {},
+  ['yamlls'] = {},
 }
 
-for _, lsp in ipairs(servers) do
-	lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities({}))
+for lsp, conf in ipairs(servers) do
+  lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities(conf))
 end
+
+vim.keymap.set('n', '[e', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']e', vim.diagnostic.goto_next)
