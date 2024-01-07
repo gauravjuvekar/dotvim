@@ -358,3 +358,6 @@
 [submodule "pack/bundles/start/nvim-treesitter"]
 	path = pack/bundles/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "pack/bundles/start/trouble.nvim"]
+	path = pack/bundles/start/trouble.nvim
+	url = https://github.com/folke/trouble.nvim
