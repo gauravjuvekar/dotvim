@@ -71,7 +71,7 @@
 	url = https://github.com/sukima/xmledit.git
 	ignore = untracked
 [submodule "bundle/YouCompleteMe"]
-	path = pack/bundles/start/YouCompleteMe
+	path = disabled_plugins/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
 	ignore = untracked
 [submodule "fonts"]
