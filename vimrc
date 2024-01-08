@@ -294,8 +294,6 @@ nnoremap <F5> :YcmDiags<CR>
 nnoremap <F6> :pclose<CR>:lclose<CR>
 nnoremap <F7> :ptag<CR>
 nmap <S-k> <Plug>(YCMHover)
-nnoremap <leader>gd :YcmCompleter GoTo<CR>
-nnoremap <leader>gD :YcmCompleter GoToDeclaration<CR>
 
 
 let g:NERDSpaceDelims = 1
@@ -366,13 +364,6 @@ let g:GtagsCscope_Quiet = 1
 " noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
 " noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
 
-
-" clang-format
-map <c-k> :py3f /usr/share/clang/clang-format.py<cr>
-imap <c-k> <c-o>:py3f /usr/share/clang/clang-format.py<cr>
-" or YAPF
-autocmd Filetype python map <buffer> <c-k> :YAPF<cr>
-autocmd Filetype python imap <buffer> <c-k> <c-o>:YAPF<cr>
 
 " clang-rename
 " let g:clang_rename_path = "/usr/share/clang/clang-rename.py"
