@@ -361,3 +361,6 @@
 [submodule "pack/bundles/start/trouble.nvim"]
 	path = pack/bundles/start/trouble.nvim
 	url = https://github.com/folke/trouble.nvim
+[submodule "pack/bundles/start/conform.nvim"]
+	path = pack/bundles/start/conform.nvim
+	url = https://github.com/stevearc/conform.nvim.git
