@@ -18,10 +18,6 @@
 	path = pack/bundles/start/SingleCompile
 	url = https://github.com/xuhdev/SingleCompile.git
 	ignore = untracked
-[submodule "bundle/syntastic"]
-	path = pack/bundles/start/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-	ignore = untracked
 [submodule "bundle/taglist.vim"]
 	path = pack/bundles/start/taglist.vim
 	url = https://github.com/gauravjuvekar/taglist.vim
@@ -301,10 +297,6 @@
 [submodule "bundle/vim-matchup"]
 	path = pack/bundles/start/vim-matchup
 	url = https://github.com/andymass/vim-matchup.git
-	ignore = untracked
-[submodule "bundle_out_of_tree/yapf"]
-	path = bundle_out_of_tree/yapf
-	url = https://github.com/google/yapf
 	ignore = untracked
 [submodule "bundle/vim-polyglot"]
 	path = pack/bundles/start/vim-polyglot
