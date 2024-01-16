@@ -35,12 +35,6 @@ vnoremap ; :
 set number
 set relativenumber
 
-" Search highlighting
-set showmatch
-set incsearch
-" Keymap to toggle highlight
-nnoremap <F4> :set hlsearch!<CR>
-
 " Alignments and indents
 " set autoindent
 " set smarttab
@@ -74,10 +68,6 @@ set wildmenu
 
 " How should multiple backspaces behave
 set backspace=indent,eol,start
-
-
-"Ignore case while searching
-set ignorecase
 
 "Dont automatically change to project roo
 let g:rooter_manual_only = 1
@@ -156,10 +146,6 @@ augroup END
 
 " word count
 let g:airline#extensions#wordcount#filetypes = '\vhelp|markdown|rst|org|text'
-
-
-" Use S for substitution with smart capitalization
-cnoreabbrev S Subvert
 
 
 " For alignments (like on = signs)
@@ -325,10 +311,6 @@ let g:cpp_concepts_highlight = 1
 
 let g:cmake_export_compile_commands = 1
 let g:cmake_ycm_symlinks = 1
-
-if executable('ag')
-    let g:ackprg='ag --vimgrep'
-endif
 
 let g:indent_guides_auto_colors=1
 
