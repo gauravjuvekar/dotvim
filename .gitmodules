@@ -226,17 +226,9 @@
 	path = pack/bundles/start/vim-llvm
 	url = https://github.com/rhysd/vim-llvm
 	ignore = untracked
-[submodule "bundle/vim-cpp-enhanced-highlight"]
-	path = pack/bundles/start/vim-cpp-enhanced-highlight
-	url = https://github.com/octol/vim-cpp-enhanced-highlight
-	ignore = untracked
 [submodule "bundle/vim-hilinktrace"]
 	path = pack/bundles/start/vim-hilinktrace
 	url = https://github.com/gerw/vim-hilinktrace
-	ignore = untracked
-[submodule "bundle/syntax/vim-cpp-enhanced-highlight"]
-	path = pack/bundles/start/syntax/vim-cpp-enhanced-highlight
-	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
 	ignore = untracked
 [submodule "bundle/textutil.vim"]
 	path = pack/bundles/start/textutil.vim
