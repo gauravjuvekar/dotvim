@@ -99,7 +99,7 @@
 	url = https://github.com/xolox/vim-misc.git
 	ignore = untracked
 [submodule "bundle/TagHighlight"]
-	path = pack/bundles/start/TagHighlight
+	path = disabled_plugins/TagHighlight
 	url = https://github.com/vim-scripts/TagHighlight
 	ignore = untracked
 [submodule "bundle/vim-colors-solarized"]

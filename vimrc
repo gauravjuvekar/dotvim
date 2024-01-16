@@ -247,24 +247,6 @@ let g:localvimrc_name = [".vimrc"]
 let g:localvimrc_persistent = 2
 let g:localvimrc_sandbox=1
 
-"" Disable in favor of YCM + clangd LSP
-let g:GtagsCscope_Quiet = 1
-"let g:gutentags_enabled = 0
-"let g:gutentags_trace = 0
-"" let g:gutentags_modules = ['ctags', 'gtags_cscope']
-"let g:gutentags_modules = ['gtags_cscope']
-"let g:gutentags_project_root = ['.root']
-"let g:gutentags_ctags_extra_args = ['--fields=+l']
-"let g:gutentags_cache_dir = expand('~/.cache/vim/tags')
-"let g:gutentags_define_advanced_commands = 1
-"let g:gutentags_auto_add_gtags_cscope = 1
-"let g:gutentags_plus_nomap = 1
-"let g:gutentags_plus_switch = 1
-
-" clang-rename
-" let g:clang_rename_path = "/usr/share/clang/clang-rename.py"
-" noremap <leader>r :py3f /usr/share/clang/clang-rename.py<cr>
-
 set title titlestring=
 
 " Remove the annoying bell
