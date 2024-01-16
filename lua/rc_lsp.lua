@@ -1,8 +1,5 @@
 local lspconfig = require("lspconfig")
 
-lspconfig.pyright.setup({})
-lspconfig.rust_analyzer.setup({})
-
 local servers = {
     ["bashls"] = {},
     ["clangd"] = {},
@@ -26,6 +23,6 @@ local servers = {
     ["yamlls"] = {},
 }
 
-for lsp, conf in ipairs(servers) do
+for lsp, conf in pairs(servers) do
     lspconfig[lsp].setup(require("coq").lsp_ensure_capabilities(conf))
 end
