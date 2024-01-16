@@ -86,7 +86,7 @@ autocmd BufWritePre * :call<SID>StripTrailingWhitespaces()
 
 " Make shift tab work
 exe 'set t_kB=' . nr2char(27) . '[Z'
-" Set it to up so YCM can use it
+" Set it to up so completion lists can use it
 imap <s-tab> <up>
 
 " Use these colors instead of the defaults
@@ -155,35 +155,9 @@ let g:indent_guides_auto_colors = 0
 let g:airline_powerline_fonts = 1
 
 
-let g:ycm_register_as_syntastic_checker            = 1
-let g:Show_diagnostics_ui                          = 1
-let g:ycm_enable_diagnostic_signs                  = 1
-let g:ycm_enable_diagnostic_highlighting           = 1
-let g:ycm_always_populate_location_list            = 1 "default 0
-let g:ycm_open_loclist_on_ycm_diags                = 1 "default 1
-let g:ycm_global_ycm_extra_conf                    = '~/.vim/ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf                       = 0
-let g:ycm_collect_identifiers_from_tags_files      = 1 " Let YCM read tags from Ctags file
-let g:ycm_use_ultisnips_completer                  = 1 " Default 1, just ensure
-let g:ycm_seed_identifiers_with_syntax             = 1 " Completion for programming language's keyword
-let g:ycm_complete_in_comments                     = 1 " Completion in comments
-let g:ycm_complete_in_strings                      = 1 " Completion in string
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_autoclose_preview_window_after_insertion = 0
-" let g:ycm_key_list_select_completion = ['<tab>', '<C-j>', '<Down>', '<C-n>']
-" let g:ycm_key_list_previous_completion = ['<s-tab>', '<C-k>', '<Up>', '<C-p>']
-let g:ycm_python_binary_path = exepath("python3")
-let g:ycm_clangd_binary_path = exepath("clangd")
-let g:ycm_clangd_uses_ycmd_caching = 1
-let g:ycm_auto_hover = ''
-
-nnoremap <F2> :YcmCompleter FixIt<CR>
-nnoremap <F3> :YcmCompleter GetDoc<CR>
-nnoremap <F5> :YcmDiags<CR>
 " Close the preview window or tags list. Use :ccl for the tags list also
 nnoremap <F6> :pclose<CR>:lclose<CR>
 nnoremap <F7> :ptag<CR>
-nmap <S-k> <Plug>(YCMHover)
 
 
 let g:NERDSpaceDelims = 1
@@ -240,11 +214,7 @@ let g:cpp_concepts_highlight = 1
 
 
 let g:cmake_export_compile_commands = 1
-let g:cmake_ycm_symlinks = 1
 
 let g:indent_guides_auto_colors=1
 
 let g:tex_flavor='latex'
-
-" Don't use non-ASCII7 symbols for puml previews
-let g:slumlord_asciiart_utf=0

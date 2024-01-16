@@ -66,17 +66,9 @@
 	path = pack/bundles/start/xmledit
 	url = https://github.com/sukima/xmledit.git
 	ignore = untracked
-[submodule "bundle/YouCompleteMe"]
-	path = disabled_plugins/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe
-	ignore = untracked
 [submodule "fonts"]
 	path = fonts
 	url = https://github.com/powerline/fonts.git
-	ignore = untracked
-[submodule "disabled_plugins/jedi-vim"]
-	path = disabled_plugins/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 	ignore = untracked
 [submodule "bundle/securemodelines"]
 	path = pack/bundles/start/securemodelines
@@ -94,10 +86,6 @@
 	path = pack/bundles/start/vim-misc
 	url = https://github.com/xolox/vim-misc.git
 	ignore = untracked
-[submodule "bundle/TagHighlight"]
-	path = disabled_plugins/TagHighlight
-	url = https://github.com/vim-scripts/TagHighlight
-	ignore = untracked
 [submodule "bundle/vim-colors-solarized"]
 	path = pack/bundles/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
@@ -110,10 +98,6 @@
 	path = terminal/gnome-terminal-colors-solarized
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 	ignore = untracked
-[submodule "bundle/gtk-vim-syntax"]
-	path = disabled_plugins/gtk-vim-syntax
-	url = https://github.com/vim-scripts/gtk-vim-syntax.git
-	ignore = untracked
 [submodule "bundle/scons.vim"]
 	path = pack/bundles/start/scons.vim
 	url = https://github.com/vim-scripts/scons.vim.git
@@ -125,10 +109,6 @@
 [submodule "bundle/vim-autotag"]
 	path = bundle/vim-autotag
 	url = https://github.com/craigemery/vim-autotag.git
-	ignore = untracked
-[submodule "bundle/vim-gutentags"]
-	path = disabled_plugins/vim-gutentags
-	url = https://github.com/ludovicchabant/vim-gutentags
 	ignore = untracked
 [submodule "bundle/abudden-EasyColour"]
 	path = pack/bundles/start/abudden-EasyColour
@@ -174,10 +154,6 @@
 	path = pack/bundles/start/vim-rooter
 	url = https://github.com/airblade/vim-rooter
 	ignore = untracked
-[submodule "bundle/tagbar"]
-	path = disabled_plugins/tagbar
-	url = https://github.com/majutsushi/tagbar
-	ignore = untracked
 [submodule "bundle/vim-localvimrc"]
 	path = pack/bundles/start/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc
@@ -189,10 +165,6 @@
 [submodule "bundle/plantuml-syntax"]
 	path = pack/bundles/start/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax.git
-	ignore = untracked
-[submodule "bundle/vim-slumlord"]
-	path = disabled_plugins/vim-slumlord
-	url = https://github.com/scrooloose/vim-slumlord.git
 	ignore = untracked
 [submodule "bundle/unite.vim"]
 	path = pack/bundles/start/unite.vim
@@ -238,10 +210,6 @@
 	path = pack/bundles/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg
 	ignore = untracked
-[submodule "bundle/gutentags_plus"]
-	path = disabled_plugins/gutentags_plus
-	url = https://github.com/skywind3000/gutentags_plus.git
-	ignore = untracked
 [submodule "bundle/vim-table-mode"]
 	path = pack/bundles/start/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
@@ -266,10 +234,6 @@
 	path = pack/bundles/start/vim-hilinktrace
 	url = https://github.com/gerw/vim-hilinktrace
 	ignore = untracked
-[submodule "bundle/YCM-Generator"]
-	path = pack/bundles/start/YCM-Generator
-	url = https://github.com/rdnetto/YCM-Generator.git
-	ignore = untracked
 [submodule "bundle/syntax/vim-cpp-enhanced-highlight"]
 	path = pack/bundles/start/syntax/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
@@ -281,10 +245,6 @@
 [submodule "bundle/splitjoin.vim"]
 	path = pack/bundles/start/splitjoin.vim
 	url = https://github.com/andrewradev/splitjoin.vim
-	ignore = untracked
-[submodule "bundle/Conque-GDB"]
-	path = disabled_plugins/Conque-GDB
-	url = https://github.com/vim-scripts/Conque-GDB
 	ignore = untracked
 [submodule "bundle/vim-buffergator"]
 	path = pack/bundles/start/vim-buffergator
