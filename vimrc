@@ -106,13 +106,6 @@ let g:load_doxygen_syntax = 1
 hi link doxygenBrief doxygenBody
 hi link doxygenSpecialOneLineDesc doxygenBody
 
-" Force update types files (for syntax coloring)
-augroup UpdateTypesFiles
-    autocmd!
-    autocmd BufWritePost *.h,*.c,*.cpp,*.cc,*.hh :UpdateTypesFile
-augroup END
-
-
 "Highlight words
 augroup HiglightTODO
     autocmd!
