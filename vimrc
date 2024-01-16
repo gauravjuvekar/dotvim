@@ -74,16 +74,6 @@ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
 set linespace=4
 
 
-" Strip trailing whitespaces on write
-function! <SID>StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfun
-
-autocmd BufWritePre * :call<SID>StripTrailingWhitespaces()
-
 " Make shift tab work
 exe 'set t_kB=' . nr2char(27) . '[Z'
 " Set it to up so completion lists can use it
