@@ -149,10 +149,6 @@ let g:easy_align_delimiters = {
 \}
 
 
-nmap ]h <Plug>(GitGutterNextHunk)
-nmap [h <Plug>(GitGutterPrevHunk)
-
-
 "python indents
 let g:pyindent_continue = '&sw'
 let g:pyindent_open_paren = '&sw'
@@ -244,10 +240,6 @@ let g:file_line_crosshairs=0
 " Autoinsert current time with tnow
 iab tnow <c-r>=strftime("%FT%T%z")<cr>
 
-" vim-easymotion
-let g:EasyMotion_smartcase = 1
-nmap f <Plug>(easymotion-overwin-f)
-
 " large file support
 let g:hugefile_trigger_size = 256 "MB
 
@@ -268,17 +260,6 @@ let g:GtagsCscope_Quiet = 1
 "let g:gutentags_auto_add_gtags_cscope = 1
 "let g:gutentags_plus_nomap = 1
 "let g:gutentags_plus_switch = 1
-
-" noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
-" noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
-" noremap <silent> <leader>gc :GscopeFind c <C-R><C-W><cr>
-" noremap <silent> <leader>gt :GscopeFind t <C-R><C-W><cr>
-" noremap <silent> <leader>ge :GscopeFind e <C-R><C-W><cr>
-" noremap <silent> <leader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
-" noremap <silent> <leader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
-" noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
-" noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
-
 
 " clang-rename
 " let g:clang_rename_path = "/usr/share/clang/clang-rename.py"
@@ -306,11 +287,3 @@ let g:tex_flavor='latex'
 
 " Don't use non-ASCII7 symbols for puml previews
 let g:slumlord_asciiart_utf=0
-
-" Load all packages, so that we can use their defined functions in the rest of
-" the config below.
-packloadall
-
-
-" Use \w, etc to go to the next camel word
-call camelcasemotion#CreateMotionMappings('<leader>')
