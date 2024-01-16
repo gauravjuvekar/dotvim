@@ -150,15 +150,6 @@ nnoremap <F6> :pclose<CR>:lclose<CR>
 nnoremap <F7> :ptag<CR>
 
 
-" let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsSnippetDirectories = ["UltiSnips"]
-let g:UltiSnipsEditSplit = 'vertical'
-let g:UltiSnipsExpandTrigger = "<c-l>"
-let g:UltiSnipsJumpForwardTrigger = "<c-l>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
-nnoremap <leader>ue :UltiSnipsEdit<cr>
-
-
 " CtrlP stuff
 let g:ctrlp_extensions = ['undo', 'changes', 'tag', 'buffertag', 'mixed']
 let g:ctrlp_cmd = 'CtrlPMixed'

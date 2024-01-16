@@ -126,14 +126,6 @@
 	path = pack/bundles/start/cmocka.vim
 	url = https://github.com/DanSnow/cmocka.vim
 	ignore = untracked
-[submodule "bundle/ultisnips"]
-	path = pack/bundles/start/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
-	ignore = untracked
-[submodule "bundle/vim-snippets"]
-	path = pack/bundles/start/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
-	ignore = untracked
 [submodule "bundle/vim-indent-object"]
 	path = pack/bundles/start/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git

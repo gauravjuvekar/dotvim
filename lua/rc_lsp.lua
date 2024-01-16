@@ -3,10 +3,6 @@ local lspconfig = require("lspconfig")
 lspconfig.pyright.setup({})
 lspconfig.rust_analyzer.setup({})
 
-vim.g.coq_settings = {
-    auto_start = "shut-up",
-}
-
 local servers = {
     ["bashls"] = {},
     ["clangd"] = {},
