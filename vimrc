@@ -31,10 +31,6 @@ filetype plugin indent on
 nnoremap ; :
 vnoremap ; :
 
-" Line numbering
-set number
-set relativenumber
-
 " Alignments and indents
 " set autoindent
 " set smarttab
@@ -153,12 +149,6 @@ let g:easy_align_delimiters = {
 \}
 
 
-" Git gutter config
-let g:gitgutter_sign_added              = '+'
-let g:gitgutter_sign_modified           = '*'
-let g:gitgutter_sign_removed            = '-'
-let g:gitgutter_sign_removed_first_line = '^'
-let g:gitgutter_sign_modified_removed   = '#'
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
