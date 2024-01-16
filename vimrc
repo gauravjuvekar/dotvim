@@ -45,8 +45,6 @@ set expandtab
 set textwidth=80
 set colorcolumn=80,100,120
 
-au VimEnter * if &diff | execute 'windo set wrap' | endif
-
 " Code folding
 set foldmethod=syntax
 set foldlevelstart=99
@@ -326,8 +324,3 @@ packloadall
 
 " Use \w, etc to go to the next camel word
 call camelcasemotion#CreateMotionMappings('<leader>')
-
-" 3 way merge commands
-nnoremap ml :diffget LOCAL<cr>
-nnoremap mb :diffget BASE<cr>
-nnoremap mr :diffget REMOTE<cr>
