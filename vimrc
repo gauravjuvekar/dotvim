@@ -8,6 +8,9 @@ if has('python3')
     " py3 1 + 1
 endif
 
+" COQ fails on nixos if bundled nvim-python3 version is used
+let g:python3_host_prog = exepath('python3')
+
 if !has('nvim')
     set viminfo+=n~/.local/state/vim/viminfo
 endif
