@@ -1,8 +1,20 @@
 local lspconfig = require("lspconfig")
 
+
+
+local jsonls_capabilities = vim.lsp.protocol.make_client_capabilities()
+jsonls_capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 local servers = {
     ["bashls"] = {},
     ["clangd"] = {},
+    ["jsonls"] = {
+        cmd = {
+            "vscode-json-languageserver",
+            "--stdio"
+        },
+        capabilities = jsonls_capabilities,
+    },
     ["lua_ls"] = {
         settings = {
             Lua = {
@@ -15,7 +27,12 @@ local servers = {
         },
     },
     ["nixd"] = {},
-    ["perlnavigator"] = {},
+    ["perlnavigator"] = {
+        cmd = {
+            "perlnavigator",
+            "--stdio"
+        },
+    },
     ["phpactor"] = {},
     ["pyright"] = {},
     ["rust_analyzer"] = {},
