@@ -65,7 +65,7 @@ require("nvim-treesitter.configs").setup({
     highlight = {
         enable = true,
     },
-    indentation = {
+    indent = {
         enable = true,
     },
 })
