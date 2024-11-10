@@ -124,9 +124,6 @@ augroup spellcheck
     autocmd Filetype markdown,mkd,text,mail set spell spelllang=en
 augroup END
 
-" word count
-let g:airline#extensions#wordcount#filetypes = '\vhelp|markdown|rst|org|text'
-
 
 " For alignments (like on = signs)
 vmap <Enter> <Plug>(EasyAlign)
@@ -136,9 +133,6 @@ let g:easy_align_delimiters = {
 
 
 let g:indent_guides_auto_colors = 0
-
-
-let g:airline_powerline_fonts = 1
 
 
 " Close the preview window or tags list. Use :ccl for the tags list also
