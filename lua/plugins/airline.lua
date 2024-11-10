@@ -8,8 +8,7 @@ return {
   },
   init = function()
     -- word count
-    vim.g.airline = { extensions = { wordcount = { filetypes = '\vhelp|markdown|rst|org|text'}}}
+    vim.g.airline = { extensions = { wordcount = { filetypes = "\vhelp|markdown|rst|org|text" } } }
     vim.g.airline_powerline_fonts = 1
-  end
-
+  end,
 }

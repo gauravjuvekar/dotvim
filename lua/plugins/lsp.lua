@@ -10,7 +10,7 @@ return {
 
     -- lua & third party sources -- See https://github.com/ms-jpq/coq.thirdparty
     -- Need to **configure separately**
-    { 'ms-jpq/coq.thirdparty', branch = "3p" }
+    { "ms-jpq/coq.thirdparty", branch = "3p" },
     -- - shell repl
     -- - nvim lua api
     -- - scientific calculator
@@ -19,8 +19,8 @@ return {
   },
   init = function()
     vim.g.coq_settings = {
-        auto_start = false, -- if you want to start COQ at startup
-        -- Your COQ settings here
+      auto_start = false, -- if you want to start COQ at startup
+      -- Your COQ settings here
     }
   end,
   config = function()
@@ -29,42 +29,42 @@ return {
     jsonls_capabilities.textDocument.completion.completionItem.snippetSupport = true
 
     local servers = {
-        ["bashls"] = {},
-        ["clangd"] = {},
-        ["jsonls"] = {
-            cmd = {
-                "vscode-json-languageserver",
-                "--stdio"
-            },
-            capabilities = jsonls_capabilities,
+      ["bashls"] = {},
+      ["clangd"] = {},
+      ["jsonls"] = {
+        cmd = {
+          "vscode-json-languageserver",
+          "--stdio",
         },
-        ["lua_ls"] = {
-            settings = {
-                Lua = {
-                    diagnostics = {
-                        globals = {
-                            "vim",
-                        },
-                    },
-                },
+        capabilities = jsonls_capabilities,
+      },
+      ["lua_ls"] = {
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = {
+                "vim",
+              },
             },
+          },
         },
-        ["nixd"] = {},
-        ["perlnavigator"] = {
-            cmd = {
-                "perlnavigator",
-                "--stdio"
-            },
+      },
+      ["nixd"] = {},
+      ["perlnavigator"] = {
+        cmd = {
+          "perlnavigator",
+          "--stdio",
         },
-        ["phpactor"] = {},
-        ["pyright"] = {},
-        ["rust_analyzer"] = {},
-        ["vimls"] = {},
-        ["yamlls"] = {},
+      },
+      ["phpactor"] = {},
+      ["pyright"] = {},
+      ["rust_analyzer"] = {},
+      ["vimls"] = {},
+      ["yamlls"] = {},
     }
 
     for lsp, conf in pairs(servers) do
-        lspconfig[lsp].setup(require("coq").lsp_ensure_capabilities(conf))
+      lspconfig[lsp].setup(require("coq").lsp_ensure_capabilities(conf))
     end
   end,
 }
