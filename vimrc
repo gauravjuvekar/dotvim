@@ -21,8 +21,6 @@ let g:cachedir_config = {
 \   }
 \}
 
-lua require('rc_lsp')
-
 " Disable mouse as it prevents select->mouse buffer copy
 set mouse=
 

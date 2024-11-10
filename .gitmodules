@@ -262,15 +262,6 @@
 [submodule "pack/bundles/start/open-browser.vim"]
 	path = pack/bundles/start/open-browser.vim
 	url = https://github.com/tyru/open-browser.vim.git
-[submodule "pack/bundles/start/nvim-lspconfig"]
-	path = pack/bundles/start/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig.git
-[submodule "pack/bundles/start/coq_nvim"]
-	path = pack/bundles/start/coq_nvim
-	url = https://github.com/ms-jpq/coq_nvim
-[submodule "pack/bundles/start/coq.artifacts"]
-	path = pack/bundles/start/coq.artifacts
-	url = https://github.com/ms-jpq/coq.artifacts
 [submodule "pack/bundles/start/nvim-treesitter"]
 	path = pack/bundles/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
