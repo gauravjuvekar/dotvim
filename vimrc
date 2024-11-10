@@ -1,3 +1,4 @@
+lua require("gutter")
 lua require("config.lazy")
 
 if has('python3')
