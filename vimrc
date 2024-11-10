@@ -1,4 +1,4 @@
-set nocompatible
+lua require("config.lazy")
 
 if has('python3')
     " Force loading python3 so that python2 isn't used depending on plugin load
