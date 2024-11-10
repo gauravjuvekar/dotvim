@@ -123,13 +123,6 @@ augroup spellcheck
 augroup END
 
 
-" For alignments (like on = signs)
-vmap <Enter> <Plug>(EasyAlign)
-let g:easy_align_delimiters = {
-\   '\': {'pattern': '\\$', },
-\}
-
-
 let g:indent_guides_auto_colors = 0
 
 

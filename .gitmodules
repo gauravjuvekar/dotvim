@@ -22,10 +22,6 @@
 	path = pack/bundles/start/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes
 	ignore = untracked
-[submodule "bundle/vim-easy-align"]
-	path = pack/bundles/start/vim-easy-align
-	url = https://github.com/junegunn/vim-easy-align
-	ignore = untracked
 [submodule "bundle/vim-fugitive"]
 	path = pack/bundles/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
