@@ -254,9 +254,6 @@
 [submodule "pack/bundles/start/open-browser.vim"]
 	path = pack/bundles/start/open-browser.vim
 	url = https://github.com/tyru/open-browser.vim.git
-[submodule "pack/bundles/start/nvim-treesitter"]
-	path = pack/bundles/start/nvim-treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter
 [submodule "pack/bundles/start/trouble.nvim"]
 	path = pack/bundles/start/trouble.nvim
 	url = https://github.com/folke/trouble.nvim
@@ -269,6 +266,3 @@
 [submodule "pack/bundles/start/nvim-ts-autotag"]
 	path = pack/bundles/start/nvim-ts-autotag
 	url = https://github.com/windwp/nvim-ts-autotag.git
-[submodule "pack/bundles/start/nvim-treesitter-endwise"]
-	path = pack/bundles/start/nvim-treesitter-endwise
-	url = https://github.com/RRethy/nvim-treesitter-endwise.git

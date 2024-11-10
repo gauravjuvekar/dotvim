@@ -1,5 +1,10 @@
-require("nvim-treesitter.configs").setup({
-    ensure_installed = {
+return {
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  config = function()
+    local configs = require("nvim-treesitter.configs")
+    configs.setup({
+      ensure_installed = {
         "bash",
         "c",
         "comment",
@@ -55,17 +60,19 @@ require("nvim-treesitter.configs").setup({
         "xml",
         "yaml",
         "zig",
-    },
-    autotag = {
+      },
+      autotag = {
         enable = true,
-    },
-    endwise = {
+      },
+      endwise = {
         enable = true,
-    },
-    highlight = {
+      },
+      highlight = {
         enable = true,
-    },
-    indent = {
+      },
+      indent = {
         enable = true,
-    },
-})
+      },
+    })
+  end,
+}
