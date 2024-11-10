@@ -114,10 +114,6 @@
 	path = pack/bundles/start/abudden-EasyColour
 	url = https://github.com/gauravjuvekar/abudden-EasyColour
 	ignore = untracked
-[submodule "bundle/vim-pencil"]
-	path = pack/bundles/start/vim-pencil
-	url = https://github.com/reedes/vim-pencil
-	ignore = untracked
 [submodule "bundle/cmocka.vim"]
 	path = pack/bundles/start/cmocka.vim
 	url = https://github.com/DanSnow/cmocka.vim
