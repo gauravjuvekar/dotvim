@@ -6,10 +6,6 @@
 	path = pack/bundles/start/MatchTagAlways
 	url = https://github.com/Valloric/MatchTagAlways.git
 	ignore = untracked
-[submodule "bundle/nerdcommenter"]
-	path = pack/bundles/start/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter
-	ignore = untracked
 [submodule "bundle/nerdtree"]
 	path = pack/bundles/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
