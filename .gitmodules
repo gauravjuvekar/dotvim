@@ -1,23 +1,8 @@
-[submodule "bundle/nerdtree"]
-	path = pack/bundles/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-	ignore = untracked
 [submodule "bundle/vim-autotag"]
 	path = bundle/vim-autotag
 	url = https://github.com/craigemery/vim-autotag.git
 	ignore = untracked
-[submodule "bundle/vim-autoswap"]
-	path = pack/bundles/start/vim-autoswap
-	url = https://github.com/gioele/vim-autoswap.git
-	ignore = untracked
-[submodule "bundle/vim-hilinktrace"]
-	path = pack/bundles/start/vim-hilinktrace
-	url = https://github.com/gerw/vim-hilinktrace
-	ignore = untracked
 [submodule "semantic-highlight.vim"]
-	url = https://github.com/jaxbot/semantic-highlight.vim.git
-[submodule "pack/bundles/start/semantic-highlight.vim"]
-	path = pack/bundles/start/semantic-highlight.vim
 	url = https://github.com/jaxbot/semantic-highlight.vim.git
 [submodule "pack/bundles/start/trouble.nvim"]
 	path = pack/bundles/start/trouble.nvim
