@@ -50,10 +50,6 @@
 	path = pack/bundles/start/securemodelines
 	url = https://github.com/ciaranm/securemodelines.git
 	ignore = untracked
-[submodule "bundle/vim-abolish"]
-	path = pack/bundles/start/vim-abolish
-	url = https://github.com/tpope/vim-abolish.git
-	ignore = untracked
 [submodule "bundle/vim-speeddating"]
 	path = pack/bundles/start/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git
@@ -109,10 +105,6 @@
 [submodule "bundle/vim-codequery"]
 	path = pack/bundles/start/vim-codequery
 	url = https://github.com/devjoe/vim-codequery.git
-	ignore = untracked
-[submodule "bundle/ack.vim"]
-	path = pack/bundles/start/ack.vim
-	url = https://github.com/mileszs/ack.vim.git
 	ignore = untracked
 [submodule "bundle/codi.vim"]
 	path = pack/bundles/start/codi.vim
