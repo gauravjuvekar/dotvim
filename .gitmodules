@@ -46,10 +46,6 @@
 	path = fonts
 	url = https://github.com/powerline/fonts.git
 	ignore = untracked
-[submodule "bundle/securemodelines"]
-	path = pack/bundles/start/securemodelines
-	url = https://github.com/ciaranm/securemodelines.git
-	ignore = untracked
 [submodule "bundle/vim-speeddating"]
 	path = pack/bundles/start/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git

@@ -1,5 +1,6 @@
 lua require("config.diff")
 lua require("config.gutter")
+lua require("config.modeline")
 lua require("config.search")
 lua require("config.yankpaste")
 lua require("config.lazy")
