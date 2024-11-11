@@ -71,12 +71,6 @@ let g:rooter_manual_only = 1
 let g:rooter_patterns = ['Rakefile', '.git/', '.root']
 set autochdir
 
-
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
-" Required as underscores appear as space in gvim otherwise
-set linespace=4
-
-
 " Make shift tab work
 exe 'set t_kB=' . nr2char(27) . '[Z'
 " Set it to up so completion lists can use it
