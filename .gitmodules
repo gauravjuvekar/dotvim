@@ -98,14 +98,6 @@
 	path = pack/bundles/start/vim-matchup
 	url = https://github.com/andymass/vim-matchup.git
 	ignore = untracked
-[submodule "vim-perforce"]
-	path = pack/bundles/start/vim-perforce
-	url = https://github.com/gauravjuvekar/vim-perforce.git
-	ignore = untracked
-[submodule "bundle/genutils"]
-	path = pack/bundles/start/genutils
-	url = https://github.com/vim-scripts/genutils.git
-	ignore = untracked
 [submodule "pack/bundles/start/cachedir.vim"]
 	path = pack/bundles/start/cachedir.vim
 	url = https://github.com/Neui/cachedir.vim.git
