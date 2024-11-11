@@ -150,10 +150,6 @@
 	path = pack/bundles/start/vim-matchup
 	url = https://github.com/andymass/vim-matchup.git
 	ignore = untracked
-[submodule "bundle/vim-alias"]
-	path = pack/bundles/start/vim-alias
-	url = https://github.com/konfekt/vim-alias.git
-	ignore = untracked
 [submodule "vim-perforce"]
 	path = pack/bundles/start/vim-perforce
 	url = https://github.com/gauravjuvekar/vim-perforce.git
