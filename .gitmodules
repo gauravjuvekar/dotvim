@@ -240,9 +240,6 @@
 [submodule "pack/bundles/start/vim-better-whitespace"]
 	path = pack/bundles/start/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
-[submodule "pack/bundles/start/nvim-autopairs"]
-	path = pack/bundles/start/nvim-autopairs
-	url = https://github.com/windwp/nvim-autopairs.git
 [submodule "pack/bundles/start/nvim-ts-autotag"]
 	path = pack/bundles/start/nvim-ts-autotag
 	url = https://github.com/windwp/nvim-ts-autotag.git
