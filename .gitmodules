@@ -142,10 +142,6 @@
 	path = pack/bundles/start/vimtex
 	url = https://github.com/lervag/vimtex
 	ignore = untracked
-[submodule "bundle/vim-gnupg"]
-	path = pack/bundles/start/vim-gnupg
-	url = https://github.com/jamessan/vim-gnupg
-	ignore = untracked
 [submodule "bundle/vim-table-mode"]
 	path = pack/bundles/start/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
