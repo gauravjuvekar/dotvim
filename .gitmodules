@@ -186,10 +186,6 @@
 	path = pack/bundles/start/textutil.vim
 	url = https://github.com/vim-scripts/textutil.vim
 	ignore = untracked
-[submodule "bundle/splitjoin.vim"]
-	path = pack/bundles/start/splitjoin.vim
-	url = https://github.com/andrewradev/splitjoin.vim
-	ignore = untracked
 [submodule "bundle/vim-buffergator"]
 	path = pack/bundles/start/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator
