@@ -6,10 +6,6 @@
 	path = pack/bundles/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
 	ignore = untracked
-[submodule "bundle/xmledit"]
-	path = pack/bundles/start/xmledit
-	url = https://github.com/sukima/xmledit.git
-	ignore = untracked
 [submodule "bundle/vim-autotag"]
 	path = bundle/vim-autotag
 	url = https://github.com/craigemery/vim-autotag.git
@@ -21,10 +17,6 @@
 [submodule "bundle/wordCount.vim"]
 	path = pack/bundles/start/wordCount.vim
 	url = https://github.com/ChesleyTan/wordCount.vim
-	ignore = untracked
-[submodule "bundle/vimtex"]
-	path = pack/bundles/start/vimtex
-	url = https://github.com/lervag/vimtex
 	ignore = untracked
 [submodule "bundle/vim-table-mode"]
 	path = pack/bundles/start/vim-table-mode
