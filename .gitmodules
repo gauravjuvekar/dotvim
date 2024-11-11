@@ -2,33 +2,17 @@
 	path = pack/bundles/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	ignore = untracked
-[submodule "bundle/vim-fugitive"]
-	path = pack/bundles/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
-	ignore = untracked
 [submodule "bundle/vim-multiple-cursors"]
 	path = pack/bundles/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
-	ignore = untracked
-[submodule "bundle/vim-repeat"]
-	path = pack/bundles/start/vim-repeat
-	url = https://github.com/tpope/vim-repeat
 	ignore = untracked
 [submodule "bundle/xmledit"]
 	path = pack/bundles/start/xmledit
 	url = https://github.com/sukima/xmledit.git
 	ignore = untracked
-[submodule "bundle/vim-misc"]
-	path = pack/bundles/start/vim-misc
-	url = https://github.com/xolox/vim-misc.git
-	ignore = untracked
 [submodule "bundle/vim-autotag"]
 	path = bundle/vim-autotag
 	url = https://github.com/craigemery/vim-autotag.git
-	ignore = untracked
-[submodule "bundle/vim-localvimrc"]
-	path = pack/bundles/start/vim-localvimrc
-	url = https://github.com/embear/vim-localvimrc
 	ignore = untracked
 [submodule "bundle/vim-wordy"]
 	path = pack/bundles/start/vim-wordy
@@ -37,10 +21,6 @@
 [submodule "bundle/wordCount.vim"]
 	path = pack/bundles/start/wordCount.vim
 	url = https://github.com/ChesleyTan/wordCount.vim
-	ignore = untracked
-[submodule "bundle/vim-hugefile"]
-	path = pack/bundles/start/vim-hugefile
-	url = https://github.com/mhinz/vim-hugefile
 	ignore = untracked
 [submodule "bundle/vimtex"]
 	path = pack/bundles/start/vimtex
@@ -58,9 +38,6 @@
 	path = pack/bundles/start/vim-hilinktrace
 	url = https://github.com/gerw/vim-hilinktrace
 	ignore = untracked
-[submodule "pack/bundles/start/cachedir.vim"]
-	path = pack/bundles/start/cachedir.vim
-	url = https://github.com/Neui/cachedir.vim.git
 [submodule "semantic-highlight.vim"]
 	url = https://github.com/jaxbot/semantic-highlight.vim.git
 [submodule "pack/bundles/start/semantic-highlight.vim"]
