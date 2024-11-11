@@ -1,4 +1,5 @@
 lua require("config.gutter")
+lua require("config.yankpaste")
 lua require("config.lazy")
 
 colorscheme carbonfox
