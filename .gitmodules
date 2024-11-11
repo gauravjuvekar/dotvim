@@ -34,10 +34,6 @@
 	path = pack/bundles/start/xmledit
 	url = https://github.com/sukima/xmledit.git
 	ignore = untracked
-[submodule "bundle/vim-speeddating"]
-	path = pack/bundles/start/vim-speeddating
-	url = https://github.com/tpope/vim-speeddating.git
-	ignore = untracked
 [submodule "bundle/vim-misc"]
 	path = pack/bundles/start/vim-misc
 	url = https://github.com/xolox/vim-misc.git
