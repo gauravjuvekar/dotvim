@@ -2,17 +2,9 @@
 	path = pack/bundles/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	ignore = untracked
-[submodule "bundle/taglist.vim"]
-	path = pack/bundles/start/taglist.vim
-	url = https://github.com/gauravjuvekar/taglist.vim
-	ignore = untracked
 [submodule "bundle/vim-fugitive"]
 	path = pack/bundles/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-	ignore = untracked
-[submodule "bundle/vim-indent-guides"]
-	path = pack/bundles/start/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
 	ignore = untracked
 [submodule "bundle/vim-multiple-cursors"]
 	path = pack/bundles/start/vim-multiple-cursors
@@ -33,10 +25,6 @@
 [submodule "bundle/vim-autotag"]
 	path = bundle/vim-autotag
 	url = https://github.com/craigemery/vim-autotag.git
-	ignore = untracked
-[submodule "bundle/vim-indent-object"]
-	path = pack/bundles/start/vim-indent-object
-	url = https://github.com/michaeljsmith/vim-indent-object.git
 	ignore = untracked
 [submodule "bundle/vim-localvimrc"]
 	path = pack/bundles/start/vim-localvimrc
