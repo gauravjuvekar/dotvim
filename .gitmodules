@@ -4,6 +4,3 @@
 	ignore = untracked
 [submodule "semantic-highlight.vim"]
 	url = https://github.com/jaxbot/semantic-highlight.vim.git
-[submodule "pack/bundles/start/trouble.nvim"]
-	path = pack/bundles/start/trouble.nvim
-	url = https://github.com/folke/trouble.nvim
