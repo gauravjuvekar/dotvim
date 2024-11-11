@@ -18,10 +18,6 @@
 	path = pack/bundles/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
 	ignore = untracked
-[submodule "bundle/vimproc.vim"]
-	path = pack/bundles/start/vimproc.vim
-	url = https://github.com/Shougo/vimproc.vim
-	ignore = untracked
 [submodule "bundle/vim-repeat"]
 	path = pack/bundles/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
@@ -50,10 +46,6 @@
 	path = pack/bundles/start/vim-wordy
 	url = https://github.com/reedes/vim-wordy.git
 	ignore = untracked
-[submodule "bundle/vim-codequery"]
-	path = pack/bundles/start/vim-codequery
-	url = https://github.com/devjoe/vim-codequery.git
-	ignore = untracked
 [submodule "bundle/wordCount.vim"]
 	path = pack/bundles/start/wordCount.vim
 	url = https://github.com/ChesleyTan/wordCount.vim
@@ -77,14 +69,6 @@
 [submodule "bundle/vim-hilinktrace"]
 	path = pack/bundles/start/vim-hilinktrace
 	url = https://github.com/gerw/vim-hilinktrace
-	ignore = untracked
-[submodule "bundle/textutil.vim"]
-	path = pack/bundles/start/textutil.vim
-	url = https://github.com/vim-scripts/textutil.vim
-	ignore = untracked
-[submodule "bundle/vim-buffergator"]
-	path = pack/bundles/start/vim-buffergator
-	url = https://github.com/jeetsukumaran/vim-buffergator
 	ignore = untracked
 [submodule "pack/bundles/start/cachedir.vim"]
 	path = pack/bundles/start/cachedir.vim
