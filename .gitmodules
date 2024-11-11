@@ -170,10 +170,6 @@
 	path = pack/bundles/start/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
 	ignore = untracked
-[submodule "bundle/vim-windowswap"]
-	path = pack/bundles/start/vim-windowswap
-	url = https://github.com/wesQ3/vim-windowswap.git
-	ignore = untracked
 [submodule "bundle/vim-autoswap"]
 	path = pack/bundles/start/vim-autoswap
 	url = https://github.com/gioele/vim-autoswap.git
