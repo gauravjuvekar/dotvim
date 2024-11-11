@@ -162,10 +162,6 @@
 	path = pack/bundles/start/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator
 	ignore = untracked
-[submodule "bundle/ctrlp.vim"]
-	path = pack/bundles/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
-	ignore = untracked
 [submodule "bundle/vim-matchup"]
 	path = pack/bundles/start/vim-matchup
 	url = https://github.com/andymass/vim-matchup.git

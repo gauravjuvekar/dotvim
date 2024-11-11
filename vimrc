@@ -122,16 +122,6 @@ nnoremap <F6> :pclose<CR>:lclose<CR>
 nnoremap <F7> :ptag<CR>
 
 
-" CtrlP stuff
-let g:ctrlp_extensions = ['undo', 'changes', 'tag', 'buffertag', 'mixed']
-let g:ctrlp_cmd = 'CtrlPMixed'
-" let g:ctrlp_root_markers = ['.root', '.gitignore', '.git/', '.p4ignore']
-let g:ctrlp_root_markers = ['.root', '.git/', '.p4ignore']
-nnoremap <c-i> :CtrlPTag<CR>
-" Now use C-u for going forward in the jumplist
-nnoremap <C-u> <C-i>
-
-
 let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_quickfix = 2
 
