@@ -1,4 +1,4 @@
-lua require("gutter")
+lua require("config.gutter")
 lua require("config.lazy")
 
 colorscheme carbonfox
