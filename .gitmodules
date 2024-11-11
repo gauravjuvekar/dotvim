@@ -18,10 +18,6 @@
 	path = pack/bundles/start/wordCount.vim
 	url = https://github.com/ChesleyTan/wordCount.vim
 	ignore = untracked
-[submodule "bundle/vim-table-mode"]
-	path = pack/bundles/start/vim-table-mode
-	url = https://github.com/dhruvasagar/vim-table-mode.git
-	ignore = untracked
 [submodule "bundle/vim-autoswap"]
 	path = pack/bundles/start/vim-autoswap
 	url = https://github.com/gioele/vim-autoswap.git
