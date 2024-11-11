@@ -66,11 +66,6 @@ set wildmenu
 " How should multiple backspaces behave
 set backspace=indent,eol,start
 
-"Dont automatically change to project roo
-let g:rooter_manual_only = 1
-let g:rooter_patterns = ['Rakefile', '.git/', '.root']
-set autochdir
-
 " Make shift tab work
 exe 'set t_kB=' . nr2char(27) . '[Z'
 " Set it to up so completion lists can use it

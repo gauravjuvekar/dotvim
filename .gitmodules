@@ -90,10 +90,6 @@
 	path = pack/bundles/start/CamelCaseMotion
 	url = https://github.com/bkad/CamelCaseMotion.git
 	ignore = untracked
-[submodule "bundle/vim-rooter"]
-	path = pack/bundles/start/vim-rooter
-	url = https://github.com/airblade/vim-rooter
-	ignore = untracked
 [submodule "bundle/vim-localvimrc"]
 	path = pack/bundles/start/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc
