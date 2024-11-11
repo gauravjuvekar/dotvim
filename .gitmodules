@@ -1,7 +1,3 @@
-[submodule "bundle/MatchTagAlways"]
-	path = pack/bundles/start/MatchTagAlways
-	url = https://github.com/Valloric/MatchTagAlways.git
-	ignore = untracked
 [submodule "bundle/nerdtree"]
 	path = pack/bundles/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -89,10 +85,6 @@
 [submodule "bundle/vim-buffergator"]
 	path = pack/bundles/start/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator
-	ignore = untracked
-[submodule "bundle/vim-matchup"]
-	path = pack/bundles/start/vim-matchup
-	url = https://github.com/andymass/vim-matchup.git
 	ignore = untracked
 [submodule "pack/bundles/start/cachedir.vim"]
 	path = pack/bundles/start/cachedir.vim
