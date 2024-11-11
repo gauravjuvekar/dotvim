@@ -2,10 +2,6 @@
 	path = pack/bundles/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	ignore = untracked
-[submodule "bundle/vim-multiple-cursors"]
-	path = pack/bundles/start/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors
-	ignore = untracked
 [submodule "bundle/vim-autotag"]
 	path = bundle/vim-autotag
 	url = https://github.com/craigemery/vim-autotag.git
