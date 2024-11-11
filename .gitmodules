@@ -1,7 +1,3 @@
-[submodule "bundle/gitv"]
-	path = pack/bundles/start/gitv
-	url = https://github.com/gregsexton/gitv.git
-	ignore = untracked
 [submodule "bundle/MatchTagAlways"]
 	path = pack/bundles/start/MatchTagAlways
 	url = https://github.com/Valloric/MatchTagAlways.git
@@ -9,10 +5,6 @@
 [submodule "bundle/nerdtree"]
 	path = pack/bundles/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-	ignore = untracked
-[submodule "bundle/SingleCompile"]
-	path = pack/bundles/start/SingleCompile
-	url = https://github.com/xuhdev/SingleCompile.git
 	ignore = untracked
 [submodule "bundle/taglist.vim"]
 	path = pack/bundles/start/taglist.vim
@@ -42,10 +34,6 @@
 	path = pack/bundles/start/xmledit
 	url = https://github.com/sukima/xmledit.git
 	ignore = untracked
-[submodule "fonts"]
-	path = fonts
-	url = https://github.com/powerline/fonts.git
-	ignore = untracked
 [submodule "bundle/vim-speeddating"]
 	path = pack/bundles/start/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git
@@ -54,29 +42,13 @@
 	path = pack/bundles/start/vim-misc
 	url = https://github.com/xolox/vim-misc.git
 	ignore = untracked
-[submodule "bundle/scons.vim"]
-	path = pack/bundles/start/scons.vim
-	url = https://github.com/vim-scripts/scons.vim.git
-	ignore = untracked
 [submodule "bundle/vim-autotag"]
 	path = bundle/vim-autotag
 	url = https://github.com/craigemery/vim-autotag.git
 	ignore = untracked
-[submodule "bundle/abudden-EasyColour"]
-	path = pack/bundles/start/abudden-EasyColour
-	url = https://github.com/gauravjuvekar/abudden-EasyColour
-	ignore = untracked
-[submodule "bundle/cmocka.vim"]
-	path = pack/bundles/start/cmocka.vim
-	url = https://github.com/DanSnow/cmocka.vim
-	ignore = untracked
 [submodule "bundle/vim-indent-object"]
 	path = pack/bundles/start/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
-	ignore = untracked
-[submodule "bundle/argtextobj.vim"]
-	path = pack/bundles/start/argtextobj.vim
-	url = https://github.com/vim-scripts/argtextobj.vim.git
 	ignore = untracked
 [submodule "bundle/vim-localvimrc"]
 	path = pack/bundles/start/vim-localvimrc
@@ -90,17 +62,9 @@
 	path = pack/bundles/start/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax.git
 	ignore = untracked
-[submodule "bundle/unite.vim"]
-	path = pack/bundles/start/unite.vim
-	url = https://github.com/Shougo/unite.vim.git
-	ignore = untracked
 [submodule "bundle/vim-codequery"]
 	path = pack/bundles/start/vim-codequery
 	url = https://github.com/devjoe/vim-codequery.git
-	ignore = untracked
-[submodule "bundle/codi.vim"]
-	path = pack/bundles/start/codi.vim
-	url = https://github.com/metakirby5/codi.vim.git
 	ignore = untracked
 [submodule "bundle/wordCount.vim"]
 	path = pack/bundles/start/wordCount.vim
@@ -109,10 +73,6 @@
 [submodule "bundle/vim-hugefile"]
 	path = pack/bundles/start/vim-hugefile
 	url = https://github.com/mhinz/vim-hugefile
-	ignore = untracked
-[submodule "bundle/gnuplot.vim"]
-	path = pack/bundles/start/gnuplot.vim
-	url = https://github.com/vim-scripts/gnuplot.vim
 	ignore = untracked
 [submodule "bundle/vimtex"]
 	path = pack/bundles/start/vimtex
@@ -125,10 +85,6 @@
 [submodule "bundle/vim-autoswap"]
 	path = pack/bundles/start/vim-autoswap
 	url = https://github.com/gioele/vim-autoswap.git
-	ignore = untracked
-[submodule "bundle/vim-llvm"]
-	path = pack/bundles/start/vim-llvm
-	url = https://github.com/rhysd/vim-llvm
 	ignore = untracked
 [submodule "bundle/vim-hilinktrace"]
 	path = pack/bundles/start/vim-hilinktrace
@@ -166,12 +122,6 @@
 [submodule "pack/bundles/start/semantic-highlight.vim"]
 	path = pack/bundles/start/semantic-highlight.vim
 	url = https://github.com/jaxbot/semantic-highlight.vim.git
-[submodule "pack/bundles/start/vim-isort"]
-	path = pack/bundles/start/vim-isort
-	url = https://github.com/fisadev/vim-isort
-[submodule "pack/bundles/start/ansible-vim"]
-	path = pack/bundles/start/ansible-vim
-	url = https://github.com/pearofducks/ansible-vim
 [submodule "pack/bundles/start/plantuml-previewer.vim"]
 	path = pack/bundles/start/plantuml-previewer.vim
 	url = https://github.com/weirongxu/plantuml-previewer.vim
