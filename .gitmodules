@@ -18,10 +18,6 @@
 	path = pack/bundles/start/taglist.vim
 	url = https://github.com/gauravjuvekar/taglist.vim
 	ignore = untracked
-[submodule "bundle/vim-colorschemes"]
-	path = pack/bundles/start/vim-colorschemes
-	url = https://github.com/flazz/vim-colorschemes
-	ignore = untracked
 [submodule "bundle/vim-fugitive"]
 	path = pack/bundles/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
@@ -65,18 +61,6 @@
 [submodule "bundle/vim-misc"]
 	path = pack/bundles/start/vim-misc
 	url = https://github.com/xolox/vim-misc.git
-	ignore = untracked
-[submodule "bundle/vim-colors-solarized"]
-	path = pack/bundles/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-	ignore = untracked
-[submodule "terminal/dircolors-solarized"]
-	path = terminal/dircolors-solarized
-	url = https://github.com/seebi/dircolors-solarized.git
-	ignore = untracked
-[submodule "terminal/gnome-terminal-colors-solarized"]
-	path = terminal/gnome-terminal-colors-solarized
-	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 	ignore = untracked
 [submodule "bundle/scons.vim"]
 	path = pack/bundles/start/scons.vim
