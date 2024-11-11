@@ -86,6 +86,10 @@ return {
           },
           capabilities = jsonls_capabilities,
         },
+        ["ltex"] = {
+          cmd = { "ltex-ls" },
+          filetypes = { "markdown", "text", "email" },
+        },
         ["lua_ls"] = {
           settings = {
             Lua = {
