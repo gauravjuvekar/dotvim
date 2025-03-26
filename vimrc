@@ -1,4 +1,11 @@
-set nocompatible
+lua require("config.diff")
+lua require("config.gutter")
+lua require("config.modeline")
+lua require("config.search")
+lua require("config.yankpaste")
+lua require("config.lazy")
+
+colorscheme carbonfox
 
 if has('python3')
     " Force loading python3 so that python2 isn't used depending on plugin load
@@ -20,9 +27,6 @@ let g:cachedir_config = {
 \       'global': 1
 \   }
 \}
-
-lua require('rc_lsp')
-lua require('rc_conform')
 
 " Disable mouse as it prevents select->mouse buffer copy
 set mouse=
@@ -65,17 +69,6 @@ set wildmenu
 
 " How should multiple backspaces behave
 set backspace=indent,eol,start
-
-"Dont automatically change to project roo
-let g:rooter_manual_only = 1
-let g:rooter_patterns = ['Rakefile', '.git/', '.root']
-set autochdir
-
-
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
-" Required as underscores appear as space in gvim otherwise
-set linespace=4
-
 
 " Make shift tab work
 exe 'set t_kB=' . nr2char(27) . '[Z'
@@ -124,36 +117,13 @@ augroup spellcheck
     autocmd Filetype markdown,mkd,text,mail set spell spelllang=en
 augroup END
 
-" word count
-let g:airline#extensions#wordcount#filetypes = '\vhelp|markdown|rst|org|text'
-
-
-" For alignments (like on = signs)
-vmap <Enter> <Plug>(EasyAlign)
-let g:easy_align_delimiters = {
-\   '\': {'pattern': '\\$', },
-\}
-
 
 let g:indent_guides_auto_colors = 0
-
-
-let g:airline_powerline_fonts = 1
 
 
 " Close the preview window or tags list. Use :ccl for the tags list also
 nnoremap <F6> :pclose<CR>:lclose<CR>
 nnoremap <F7> :ptag<CR>
-
-
-" CtrlP stuff
-let g:ctrlp_extensions = ['undo', 'changes', 'tag', 'buffertag', 'mixed']
-let g:ctrlp_cmd = 'CtrlPMixed'
-" let g:ctrlp_root_markers = ['.root', '.gitignore', '.git/', '.p4ignore']
-let g:ctrlp_root_markers = ['.root', '.git/', '.p4ignore']
-nnoremap <c-i> :CtrlPTag<CR>
-" Now use C-u for going forward in the jumplist
-nnoremap <C-u> <C-i>
 
 
 let g:LatexBox_latexmk_preview_continuously = 1
