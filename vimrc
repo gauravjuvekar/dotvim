@@ -75,15 +75,6 @@ exe 'set t_kB=' . nr2char(27) . '[Z'
 " Set it to up so completion lists can use it
 imap <s-tab> <up>
 
-" Use these colors instead of the defaults
-hi link DefinedName Macro
-hi link EnumeratorName Type
-hi link EnumerationValue Constant
-hi link GlobalVariable Identifier
-hi link Variable Normal
-hi link LocalVariable Normal
-
-
 " Change some filetype for better syntax support
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
@@ -91,16 +82,6 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.mk set filetype=make
 autocmd BufNewFile,BufRead SCon* set filetype=scons
 autocmd BufNewFile,BufRead *.finn set filetype=c.doxygen
-
-
-" Set sub-highlight to doxygen syntax for c sources and headers
-let g:load_doxygen_syntax = 1
-" augroup DoxygenizeCFiles
-    " autocmd!
-    " autocmd BufNewFile,BufRead *.h,*.c set filetype=c
-" augroup END
-hi link doxygenBrief doxygenBody
-hi link doxygenSpecialOneLineDesc doxygenBody
 
 "Highlight words
 augroup HiglightTODO
