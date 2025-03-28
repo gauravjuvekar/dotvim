@@ -5,8 +5,6 @@ lua require("config.search")
 lua require("config.yankpaste")
 lua require("config.lazy")
 
-colorscheme carbonfox
-
 if has('python3')
     " Force loading python3 so that python2 isn't used depending on plugin load
     " order. The 'has('python3')' check itself will force load python3, no need
