@@ -112,11 +112,23 @@ return {
         ["phpactor"] = {},
         ["pyright"] = {},
         ["rust_analyzer"] = {
+          cmd = {
+            "ra-multiplex",
+            "client"
+          },
           settings = {
             ["rust-analyzer"] = {
               cargo = {
                 features = "all",
               },
+              -- procMacro = {
+              --   ignored = {
+              --     leptos_macro = {
+              --       "component",
+              --       "server",
+              --     },
+              --   },
+              -- },
             },
           },
         },
