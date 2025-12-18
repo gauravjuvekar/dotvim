@@ -72,7 +72,6 @@ return {
       })
     end,
     config = function()
-      local lspconfig = require("lspconfig")
       local jsonls_capabilities = vim.lsp.protocol.make_client_capabilities()
       jsonls_capabilities.textDocument.completion.completionItem.snippetSupport =
         true
@@ -137,7 +136,8 @@ return {
       }
 
       for lsp, conf in pairs(servers) do
-        lspconfig[lsp].setup(require("coq").lsp_ensure_capabilities(conf))
+        vim.lsp.config(lsp, require("coq").lsp_ensure_capabilities(conf))
+        vim.lsp.enable(lsp)
       end
     end,
   },
