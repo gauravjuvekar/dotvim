@@ -113,8 +113,10 @@ return {
         ["pyright"] = {},
         ["rust_analyzer"] = {
           cmd = {
-            "ra-multiplex",
-            "client"
+            "lspmux",
+            "client",
+            "--server-path",
+            vim.fn.exepath("rust-analyzer")
           },
           settings = {
             ["rust-analyzer"] = {
