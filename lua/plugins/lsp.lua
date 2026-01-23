@@ -57,6 +57,7 @@ return {
       vim.keymap.set("n", "[x", vim.diagnostic.goto_prev)
       vim.keymap.set("n", "]x", vim.diagnostic.goto_next)
       vim.keymap.set("n", "<leader>xa", vim.lsp.buf.code_action)
+      vim.keymap.set("n", "<leader>xl", vim.diagnostic.setqflist)
 
       vim.api.nvim_create_autocmd("LspAttach", {
         group = vim.api.nvim_create_augroup("UserLspConfig", {}),
