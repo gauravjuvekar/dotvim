@@ -31,6 +31,11 @@ vim.g.maplocalleader = " "
 -- Setup lazy.nvim
 require("lazy").setup({
   checker = { enabled = false },
+  performance = {
+    rtp = {
+      reset = false,
+    },
+  },
   rocks = { enabled = false },
   spec = {
     { import = "plugins" },
