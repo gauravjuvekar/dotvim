@@ -27,7 +27,7 @@ if string.match(fqdn, [[%.nvidia%.com$]]) then
             "api_key",
             "inference.nvidia.com",
           },
-          model = "aws/anthropic/claude-opus-4-5",
+          model = "aws/anthropic/bedrock-claude-sonnet-4-6",
           timeout = 30000, -- Timeout in milliseconds
           extra_request_body = {
             reasoning_effort = "low",
