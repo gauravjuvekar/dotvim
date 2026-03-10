@@ -5,6 +5,7 @@ local overrides = {
   ['*.sqlite3'] = 'sql',
   ['*.md'] = 'markdown',
   ['*.mk'] = 'make',
+  ['*.nvmk'] = 'make',
   ['*.tt'] = 'tt2',
   ['SCon*'] = 'scons',
   ['*.finn'] = 'c.doxygen',
