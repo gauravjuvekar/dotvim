@@ -1,4 +1,5 @@
 lua require("config.diff")
+lua require("config.filetype")
 lua require("config.gutter")
 lua require("config.modeline")
 lua require("config.search")
@@ -73,13 +74,6 @@ exe 'set t_kB=' . nr2char(27) . '[Z'
 " Set it to up so completion lists can use it
 imap <s-tab> <up>
 
-" Change some filetype for better syntax support
-autocmd BufNewFile,BufRead *.html set filetype=htmldjango
-autocmd BufNewFile,BufRead *.sqlite3 set filetype=sql
-autocmd BufNewFile,BufRead *.md set filetype=markdown
-autocmd BufNewFile,BufRead *.mk set filetype=make
-autocmd BufNewFile,BufRead SCon* set filetype=scons
-autocmd BufNewFile,BufRead *.finn set filetype=c.doxygen
 
 "Highlight words
 augroup HiglightTODO
