@@ -52,8 +52,12 @@ return {
         { expr = true, noremap = true, silent = true }
       )
 
-      vim.keymap.set("n", "[x", vim.diagnostic.goto_prev)
-      vim.keymap.set("n", "]x", vim.diagnostic.goto_next)
+      vim.keymap.set("n", "[x", function()
+        vim.diagnostic.jump({ count = -1 })
+      end)
+      vim.keymap.set("n", "]x", function()
+        vim.diagnostic.jump({ count = 1 })
+      end)
       vim.keymap.set("n", "<leader>xa", vim.lsp.buf.code_action)
       vim.keymap.set("n", "<leader>xl", vim.diagnostic.setqflist)
 
@@ -87,7 +91,7 @@ return {
         },
         ["ltex"] = {
           cmd = { "ltex-ls" },
-          filetypes = { "markdown", "text", "email" },
+          filetypes = { "markdown", "text", "mail" },
         },
         ["lua_ls"] = {
           settings = {
