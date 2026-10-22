@@ -20,10 +20,8 @@ return {
     },
     init = function()
       vim.g.coq_settings = {
-        auto_start = "shut-up",
         keymap = {
           recommended = false,
-          -- jump_to_mark = "<c-l>",
         },
       }
 
@@ -139,7 +137,7 @@ return {
       }
 
       for lsp, conf in pairs(servers) do
-        vim.lsp.config(lsp, require("coq").lsp_ensure_capabilities(conf))
+        vim.lsp.config(lsp, conf)
         vim.lsp.enable(lsp)
       end
     end,
