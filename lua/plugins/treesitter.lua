@@ -5,7 +5,7 @@ return {
     build = ":TSUpdate",
     lazy = false,
     opts = {
-      ensure_installed = {
+      parsers = {
         "bash",
         "c",
         "comment",
@@ -52,32 +52,41 @@ return {
         "sql",
         "ssh_config",
         "strace",
+        "systemverilog",
         "toml",
         "tsv",
         "udev",
-        "verilog",
         "vim",
         "vimdoc",
         "xml",
         "yaml",
         "zig",
       },
-      autotag = {
-        enable = true,
-      },
-      endwise = {
-        enable = true,
-      },
-      highlight = {
-        enable = true,
-      },
-      indent = {
-        enable = true,
-      },
-      matchup = {
-        enable = true,
-      },
     },
+    config = function(_, opts)
+      local treesitter = require("nvim-treesitter")
+      treesitter.setup({ install_dir = vim.fn.stdpath("data") .. "/site" })
+      vim.treesitter.language.register(
+        "systemverilog",
+        { "systemverilog", "verilog" }
+      )
+      treesitter.install(opts.parsers)
+
+      vim.api.nvim_create_autocmd("FileType", {
+        group = vim.api.nvim_create_augroup("UserTreesitter", { clear = true }),
+        callback = function(ev)
+          local lang = vim.treesitter.language.get_lang(vim.bo[ev.buf].filetype)
+          if not lang or not vim.treesitter.language.add(lang) then
+            return
+          end
+          vim.treesitter.start(ev.buf, lang)
+          if vim.treesitter.query.get(lang, "indents") then
+            vim.bo[ev.buf].indentexpr =
+              "v:lua.require'nvim-treesitter'.indentexpr()"
+          end
+        end,
+      })
+    end,
   },
   {
     "andymass/vim-matchup",
